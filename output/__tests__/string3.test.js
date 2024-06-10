@@ -1,4 +1,4 @@
-const string3 = require('./string3');
+const string3 = require('../string3');
 
 test('countYZ should return 2 when given "fez day"', () => {
   expect(string3.countYZ("fez day")).toEqual(2);

@@ -50,7 +50,7 @@ function loadSets() {
 }
 
 function template_require(moduleName) {
-  return `const ${moduleName} = require('./${moduleName}');\n`
+  return `const ${moduleName} = require('../${moduleName}');\n`
 }
 
 function template_test(moduleName, functionName, argsList, returnValue) {

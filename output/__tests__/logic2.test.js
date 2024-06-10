@@ -1,4 +1,4 @@
-const logic2 = require('./logic2');
+const logic2 = require('../logic2');
 
 test('makeBricks should return true when given (3, 1, 8)', () => {
   expect(logic2.makeBricks(3, 1, 8)).toEqual(true);

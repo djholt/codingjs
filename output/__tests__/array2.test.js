@@ -1,4 +1,4 @@
-const array2 = require('./array2');
+const array2 = require('../array2');
 
 test('findLowestIndex should return 4 when given [99,98,97,96,95]', () => {
   expect(array2.findLowestIndex([99,98,97,96,95])).toEqual(4);

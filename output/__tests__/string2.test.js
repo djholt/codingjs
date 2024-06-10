@@ -1,4 +1,4 @@
-const string2 = require('./string2');
+const string2 = require('../string2');
 
 test('doubleChar should return "TThhee" when given "The"', () => {
   expect(string2.doubleChar("The")).toEqual("TThhee");

@@ -1,4 +1,4 @@
-const warmup2 = require('./warmup2');
+const warmup2 = require('../warmup2');
 
 test('stringTimes should return "HiHi" when given ("Hi", 2)', () => {
   expect(warmup2.stringTimes("Hi", 2)).toEqual("HiHi");

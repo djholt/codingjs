@@ -1,4 +1,4 @@
-const quizquestions = require('./quizquestions');
+const quizquestions = require('../quizquestions');
 
 test('sumDownBy2 should return 16 when given 7', () => {
   expect(quizquestions.sumDownBy2(7)).toEqual(16);

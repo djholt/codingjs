@@ -1,4 +1,4 @@
-const ap1 = require('./ap1');
+const ap1 = require('../ap1');
 
 test('scoresIncreasing should return true when given [1,3,4]', () => {
   expect(ap1.scoresIncreasing([1,3,4])).toEqual(true);

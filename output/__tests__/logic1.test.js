@@ -1,4 +1,4 @@
-const logic1 = require('./logic1');
+const logic1 = require('../logic1');
 
 test('cigarParty should return false when given (30, false)', () => {
   expect(logic1.cigarParty(30, false)).toEqual(false);

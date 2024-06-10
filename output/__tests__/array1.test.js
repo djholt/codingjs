@@ -1,4 +1,4 @@
-const array1 = require('./array1');
+const array1 = require('../array1');
 
 test('firstLast6 should return true when given [1,2,6]', () => {
   expect(array1.firstLast6([1,2,6])).toEqual(true);

@@ -1,4 +1,4 @@
-const array3 = require('./array3');
+const array3 = require('../array3');
 
 test('maxSpan should return 4 when given [1,2,1,1,3]', () => {
   expect(array3.maxSpan([1,2,1,1,3])).toEqual(4);

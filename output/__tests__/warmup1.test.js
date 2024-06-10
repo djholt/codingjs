@@ -1,4 +1,4 @@
-const warmup1 = require('./warmup1');
+const warmup1 = require('../warmup1');
 
 test('sleepIn should return true when given (true, true)', () => {
   expect(warmup1.sleepIn(true, true)).toEqual(true);

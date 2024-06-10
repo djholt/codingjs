@@ -1,4 +1,4 @@
-const recursion1 = require('./recursion1');
+const recursion1 = require('../recursion1');
 
 test('factorial should return 1 when given 1', () => {
   expect(recursion1.factorial(1)).toEqual(1);
