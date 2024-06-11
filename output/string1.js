@@ -1,100 +1,100 @@
-function helloName() {
+function helloName(name) {
 }
 
-function makeAbba() {
+function makeAbba(a, b) {
 }
 
-function makeTags() {
+function makeTags(tag, word) {
 }
 
-function makeOutWord() {
+function makeOutWord(out, word) {
 }
 
-function extraEnd() {
+function extraEnd(str) {
 }
 
-function firstTwo() {
+function firstTwo(str) {
 }
 
-function firstHalf() {
+function firstHalf(str) {
 }
 
-function withoutEnd() {
+function withoutEnd(str) {
 }
 
-function comboString() {
+function comboString(a, b) {
 }
 
-function nonStart() {
+function nonStart(a, b) {
 }
 
-function left2() {
+function left2(str) {
 }
 
-function right2() {
+function right2(str) {
 }
 
-function theEnd() {
+function theEnd(str, front) {
 }
 
-function withoutEnd2() {
+function withoutEnd2(str) {
 }
 
-function middleTwo() {
+function middleTwo(str) {
 }
 
-function endsLy() {
+function endsLy(str) {
 }
 
-function nTwice() {
+function nTwice(str, n) {
 }
 
-function twoChar() {
+function twoChar(str, index) {
 }
 
-function middleThree() {
+function middleThree(str) {
 }
 
-function hasBad() {
+function hasBad(str) {
 }
 
-function atFirst() {
+function atFirst(str) {
 }
 
-function lastChars() {
+function lastChars(a, b) {
 }
 
-function conCat() {
+function conCat(a, b) {
 }
 
-function lastTwo() {
+function lastTwo(str) {
 }
 
-function seeColor() {
+function seeColor(str) {
 }
 
-function frontAgain() {
+function frontAgain(str) {
 }
 
-function minCat() {
+function minCat(a, b) {
 }
 
-function extraFront() {
+function extraFront(str) {
 }
 
-function without2() {
+function without2(str) {
 }
 
-function deFront() {
+function deFront(str) {
 }
 
-function startWord() {
+function startWord(str, word) {
 }
 
-function withoutX() {
+function withoutX(str) {
 }
 
-function withoutX2() {
+function withoutX2(str) {
 }
 
 module.exports = {

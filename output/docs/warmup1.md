@@ -1,7 +1,7 @@
 # Warmup 1
 ## sleepIn
 The parameter weekday is true if it is a weekday, and the parameter vacation is true if we are on vacation. We sleep in if it is not a weekday or we're on vacation. Return true if we sleep in.
-Example|Expected
+sleepIn(weekday, vacation)|Expected
 -|-
 `sleepIn(true, true)` | &#10132; `true`
 `sleepIn(true, false)` | &#10132; `false`
@@ -9,7 +9,7 @@ Example|Expected
 `sleepIn(false, false)` | &#10132; `true`
 ## monkeyTrouble
 We have two monkeys, a and b, and the parameters aSmile and bSmile indicate if each is smiling. We are in trouble if they are both smiling or if neither of them is smiling. Return true if we are in trouble.
-Example|Expected
+monkeyTrouble(aSmile, bSmile)|Expected
 -|-
 `monkeyTrouble(true, true)` | &#10132; `true`
 `monkeyTrouble(false, false)` | &#10132; `true`
@@ -17,7 +17,7 @@ Example|Expected
 `monkeyTrouble(false, true)` | &#10132; `false`
 ## sumDouble
 Given two int values, return their sum. Unless the two values are the same, then return double their sum.
-Example|Expected
+sumDouble(a, b)|Expected
 -|-
 `sumDouble(1, 2)` | &#10132; `3`
 `sumDouble(3, 2)` | &#10132; `5`
@@ -29,7 +29,7 @@ Example|Expected
 `sumDouble(3, 4)` | &#10132; `7`
 ## diff21
 Given an int n, return the absolute difference between n and 21, except return double the absolute difference if n is over 21.
-Example|Expected
+diff21(n)|Expected
 -|-
 `diff21(19)` | &#10132; `2`
 `diff21(10)` | &#10132; `11`
@@ -45,7 +45,7 @@ Example|Expected
 `diff21(50)` | &#10132; `58`
 ## parrotTrouble
 We have a loud talking parrot. The "hour" parameter is the current hour time in the range 0..23. We are in trouble if the parrot is talking and the hour is before 7 or after 20. Return true if we are in trouble.
-Example|Expected
+parrotTrouble(talking, hour)|Expected
 -|-
 `parrotTrouble(true, 6)` | &#10132; `true`
 `parrotTrouble(true, 7)` | &#10132; `false`
@@ -58,7 +58,7 @@ Example|Expected
 `parrotTrouble(false, 12)` | &#10132; `false`
 ## makes10
 Given 2 ints, a and b, return true if one if them is 10 or if their sum is 10.
-Example|Expected
+makes10(a, b)|Expected
 -|-
 `makes10(9, 10)` | &#10132; `true`
 `makes10(9, 9)` | &#10132; `false`
@@ -71,7 +71,7 @@ Example|Expected
 `makes10(12, -2)` | &#10132; `true`
 ## nearHundred
 Given an int n, return true if it is within 10 of 100 or 200. Note: Math.abs(num) computes the absolute value of a number.
-Example|Expected
+nearHundred(n)|Expected
 -|-
 `nearHundred(93)` | &#10132; `true`
 `nearHundred(90)` | &#10132; `true`
@@ -85,7 +85,7 @@ Example|Expected
 `nearHundred(189)` | &#10132; `false`
 ## posNeg
 Given 2 int values, return true if one is negative and one is positive. Except if the parameter "negative" is true, then return true only if both are negative.
-Example|Expected
+posNeg(a, b, negative)|Expected
 -|-
 `posNeg(1, -1, false)` | &#10132; `true`
 `posNeg(-1, 1, false)` | &#10132; `true`
@@ -108,7 +108,7 @@ Example|Expected
 `posNeg(-5, -5, true)` | &#10132; `true`
 ## notString
 Given a string, return a new string where "not " has been added to the front. However, if the string already begins with "not", return the string unchanged.
-Example|Expected
+notString(str)|Expected
 -|-
 `notString("candy")` | &#10132; `"not candy"`
 `notString("x")` | &#10132; `"not x"`
@@ -119,7 +119,7 @@ Example|Expected
 `notString("no")` | &#10132; `"not no"`
 ## missingChar
 Given a non-empty string and an int n, return a new string where the char at index n has been removed. The value of n will be a valid index of a char in the original string (i.e. n will be in the range 0..str.length()-1 inclusive).
-Example|Expected
+missingChar(str, n)|Expected
 -|-
 `missingChar("kitten", 1)` | &#10132; `"ktten"`
 `missingChar("kitten", 0)` | &#10132; `"itten"`
@@ -133,7 +133,7 @@ Example|Expected
 `missingChar("chocolate", 8)` | &#10132; `"chocolat"`
 ## frontBack
 Given a string, return a new string where the first and last chars have been exchanged.
-Example|Expected
+frontBack(str)|Expected
 -|-
 `frontBack("code")` | &#10132; `"eodc"`
 `frontBack("a")` | &#10132; `"a"`
@@ -145,7 +145,7 @@ Example|Expected
 `frontBack("hello")` | &#10132; `"oellh"`
 ## front3
 Given a string, we'll say that the front is the first 3 chars of the string. If the string length is less than 3, the front is whatever is there. Return a new string which is 3 copies of the front.
-Example|Expected
+front3(str)|Expected
 -|-
 `front3("Java")` | &#10132; `"JavJavJav"`
 `front3("Chocolate")` | &#10132; `"ChoChoCho"`
@@ -156,7 +156,7 @@ Example|Expected
 `front3("")` | &#10132; `""`
 ## backAround
 Given a string, take the last char and return a new string with the last char added at the front and back, so 'cat' yields 'tcatt' The original string will be length 1 or more.
-Example|Expected
+backAround(str)|Expected
 -|-
 `backAround("cat")` | &#10132; `"tcatt"`
 `backAround("Hello")` | &#10132; `"oHelloo"`
@@ -166,7 +166,7 @@ Example|Expected
 `backAround("boo")` | &#10132; `"obooo"`
 ## or35
 Return true if the given non-negative number is a multiple of 3 or a multiple of 5. (Hint: Use the % 'mod' operator)
-Example|Expected
+or35(n)|Expected
 -|-
 `or35(3)` | &#10132; `true`
 `or35(10)` | &#10132; `true`
@@ -193,7 +193,7 @@ Example|Expected
 `or35(123)` | &#10132; `true`
 ## front22
 Given a string, take the first 2 chars and return the string with the 2 chars added at both the front and back, so 'kitten' yields 'kikittenki' chars are there.
-Example|Expected
+front22(str)|Expected
 -|-
 `front22("kitten")` | &#10132; `"kikittenki"`
 `front22("Ha")` | &#10132; `"HaHaHa"`
@@ -204,7 +204,7 @@ Example|Expected
 `front22("Logic")` | &#10132; `"LoLogicLo"`
 ## startHi
 Given a string, return true if the string starts with 'hi'and false otherwise.
-Example|Expected
+startHi(str)|Expected
 -|-
 `startHi("hi there")` | &#10132; `true`
 `startHi("hi")` | &#10132; `true`
@@ -216,7 +216,7 @@ Example|Expected
 `startHi("hi ho")` | &#10132; `true`
 ## icyHot
 Given two temperatures, return true if one is less than 0 and the other is greater than 100.
-Example|Expected
+icyHot(temp1, temp2)|Expected
 -|-
 `icyHot(120, -1)` | &#10132; `true`
 `icyHot(-1, 120)` | &#10132; `true`
@@ -226,7 +226,7 @@ Example|Expected
 `icyHot(120, 120)` | &#10132; `false`
 ## in1020
 Given 2 int values, return true if either of them is in the range 10..20 inclusive.
-Example|Expected
+in1020(a, b)|Expected
 -|-
 `in1020(12, 99)` | &#10132; `true`
 `in1020(21, 12)` | &#10132; `true`
@@ -237,7 +237,7 @@ Example|Expected
 `in1020(9, 9)` | &#10132; `false`
 ## hasTeen
 We'll say that a number is 'teen' if it is in the range 13..19 inclusive. Given 3 int values, return true if 1 or more of them are teen.
-Example|Expected
+hasTeen(a, b, c)|Expected
 -|-
 `hasTeen(13, 20, 10)` | &#10132; `true`
 `hasTeen(20, 19, 10)` | &#10132; `true`
@@ -252,7 +252,7 @@ Example|Expected
 `hasTeen(11, 22, 22)` | &#10132; `false`
 ## loneTeen
 We'll say that a number is 'teen' if it is in the range 13..19 inclusive. Given 2 int values, return true if one or the other is teen, but not both.
-Example|Expected
+loneTeen(a, b)|Expected
 -|-
 `loneTeen(13, 99)` | &#10132; `true`
 `loneTeen(21, 19)` | &#10132; `true`
@@ -269,7 +269,7 @@ Example|Expected
 `loneTeen(99, 99)` | &#10132; `false`
 ## delDel
 Given a string, if the string "del" appears starting at index 1, return a string where that "del" has been deleted. Otherwise, return the string unchanged.
-Example|Expected
+delDel(str)|Expected
 -|-
 `delDel("adelbc")` | &#10132; `"abc"`
 `delDel("adelHello")` | &#10132; `"aHello"`
@@ -283,7 +283,7 @@ Example|Expected
 `delDel("aadelbb")` | &#10132; `"aadelbb"`
 ## mixStart
 Return true if the given string begins with 'mix', except the 'm' can be anything, so 'pix', '9ix' .. all count.
-Example|Expected
+mixStart(str)|Expected
 -|-
 `mixStart("mix snacks")` | &#10132; `true`
 `mixStart("pix snacks")` | &#10132; `true`
@@ -293,7 +293,7 @@ Example|Expected
 `mixStart("n")` | &#10132; `false`
 ## startOz
 Given a string, return a string made of the first 2 chars (if present), however include first char only if it is 'o' and include the second only if it is 'z', so 'ozymandias' yields 'oz'.
-Example|Expected
+startOz(str)|Expected
 -|-
 `startOz("ozymandias")` | &#10132; `"oz"`
 `startOz("bzoo")` | &#10132; `"z"`
@@ -308,7 +308,7 @@ Example|Expected
 `startOz("oznic")` | &#10132; `"oz"`
 ## intMax
 Given three int values, a b c, return the largest.
-Example|Expected
+intMax(a, b, c)|Expected
 -|-
 `intMax(1, 2, 3)` | &#10132; `3`
 `intMax(1, 3, 2)` | &#10132; `3`
@@ -323,7 +323,7 @@ Example|Expected
 `intMax(5, 2, 6)` | &#10132; `6`
 ## close10
 Given 2 int values, return whichever value is nearest to the value 10, or return 0 in the event of a tie. Note that Math.abs(n) returns the absolute value of a number.
-Example|Expected
+close10(a, b)|Expected
 -|-
 `close10(8, 13)` | &#10132; `8`
 `close10(13, 8)` | &#10132; `8`
@@ -339,7 +339,7 @@ Example|Expected
 `close10(10, 10)` | &#10132; `0`
 ## in3050
 Given 2 int values, return true if they are both in the range 30..40 inclusive, or they are both in the range 40..50 inclusive.
-Example|Expected
+in3050(a, b)|Expected
 -|-
 `in3050(30, 31)` | &#10132; `true`
 `in3050(30, 41)` | &#10132; `false`
@@ -355,7 +355,7 @@ Example|Expected
 `in3050(35, 45)` | &#10132; `false`
 ## max1020
 Given 2 positive int values, return the larger value that is in the range 10..20 inclusive, or return 0 if neither is in that range.
-Example|Expected
+max1020(a, b)|Expected
 -|-
 `max1020(11, 19)` | &#10132; `19`
 `max1020(19, 11)` | &#10132; `19`
@@ -370,7 +370,7 @@ Example|Expected
 `max1020(17, 16)` | &#10132; `17`
 ## stringE
 Return true if the given string contains between 1 and 3 'e' chars.
-Example|Expected
+stringE(str)|Expected
 -|-
 `stringE("Hello")` | &#10132; `true`
 `stringE("Heelle")` | &#10132; `true`
@@ -380,7 +380,7 @@ Example|Expected
 `stringE("")` | &#10132; `false`
 ## lastDigit
 Given two non-negative int values, return true if they have the same last digit, such as with 27 and 57. Note that the % 'mod' operator computes remainders, so 17 % 10 is 7.
-Example|Expected
+lastDigit(a, b)|Expected
 -|-
 `lastDigit(7, 17)` | &#10132; `true`
 `lastDigit(6, 17)` | &#10132; `false`
@@ -391,7 +391,7 @@ Example|Expected
 `lastDigit(11, 0)` | &#10132; `false`
 ## endUp
 Given a string, return a new string where the last 3 chars are now in upper case. If the string has less than 3 chars, uppercase whatever is there. Note that str.toUpperCase() returns the uppercase version of a string.
-Example|Expected
+endUp(str)|Expected
 -|-
 `endUp("Hello")` | &#10132; `"HeLLO"`
 `endUp("hi there")` | &#10132; `"hi thERE"`
@@ -402,7 +402,7 @@ Example|Expected
 `endUp("")` | &#10132; `""`
 ## everyNth
 Given a non-empty string and an int N, return the string made starting with char 0, and then every Nth char of the string. So if N is 3, use char 0, 3, 6, ... and so on. N is 1 or more.
-Example|Expected
+everyNth(str, n)|Expected
 -|-
 `everyNth("Miracle", 2)` | &#10132; `"Mrce"`
 `everyNth("abcdefg", 2)` | &#10132; `"aceg"`

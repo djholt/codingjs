@@ -42,8 +42,11 @@ function loadSets() {
           solutions: {}
         }
       }
+      let solutionFn = solutions[problem.name]
+      let [_, fnName, fnParams] = solutionFn.toString().match(/^function (.*)\((.*)\)/)
+      problem.paramsList = fnParams.trim().length > 0 ? fnParams.split(',').map(s => s.trim()) : []
       groupedSets[setKey].problems.push(problem)
-      groupedSets[setKey].solutions[problem.name] = solutions[problem.name]
+      groupedSets[setKey].solutions[problem.name] = solutionFn
     })
   })
   return groupedSets
@@ -60,8 +63,9 @@ function template_test(moduleName, functionName, argsList, returnValue) {
   return `test('${functionName} should return ${returnStr} when given ${argsStrDesc}', () => {\n  expect(${moduleName}.${functionName}(${argsStr})).toEqual(${returnStr});\n});\n`
 }
 
-function template_function(functionName) {
-  return `function ${functionName}() {\n}\n`
+function template_function(functionName, paramsList) {
+  let paramsStr = paramsList.join(', ')
+  return `function ${functionName}(${paramsStr}) {\n}\n`
 }
 
 function template_exports(functionNameList) {
@@ -82,8 +86,9 @@ function template_md_body(text) {
   return `${text}\n`
 }
 
-function template_md_table_header() {
-  return `Example|Expected\n-|-\n`
+function template_md_table_header(functionName, paramsList) {
+  let paramsStr = paramsList.join(', ')
+  return `${functionName}(${paramsStr})|Expected\n-|-\n`
 }
 
 function template_md_table_row(functionName, argsList, returnValue) {
@@ -100,32 +105,32 @@ function run() {
     let setTitle = set.title
     let problems = set.problems
     let solutions = set.solutions
-  
+
     let mdFileOut = ''
     let srcFileOut = ''
     let testFileOut = ''
-  
+
     mdFileOut += template_md_title(setTitle)
     testFileOut += template_require(setKey)
-  
+
     problems.forEach(problem => {
       mdFileOut += template_md_subtitle(problem.name)
       mdFileOut += template_md_body(problem.question)
-      mdFileOut += template_md_table_header()
-  
+      mdFileOut += template_md_table_header(problem.name, problem.paramsList)
+
       problem.inputs.forEach(input => {
         let args = eval(input.replace(/^\(/, '[').replace(/\)$/, ']'))
         let solution = solutions[problem.name](...args)
-  
+
         mdFileOut += template_md_table_row(problem.name, args, solution)
         testFileOut += '\n' + template_test(setKey, problem.name, args, solution)
       })
-  
-      srcFileOut += template_function(problem.name) + '\n'
+
+      srcFileOut += template_function(problem.name, problem.paramsList) + '\n'
     })
-  
+
     srcFileOut += template_exports(problems.map(p => p.name))
-  
+
     fs.writeFileSync(__dirname + '/../output/docs/' + setKey + '.md', mdFileOut)
     fs.writeFileSync(__dirname + '/../output/' + setKey + '.js', srcFileOut)
     fs.writeFileSync(__dirname + '/../output/__tests__/' + setKey + '.test.js', testFileOut)

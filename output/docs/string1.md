@@ -1,7 +1,7 @@
 # String 1
 ## helloName
 Given a string name, e.g. "Bob", return a greeting of the form "Hello Bob!".
-Example|Expected
+helloName(name)|Expected
 -|-
 `helloName("Bob")` | &#10132; `"Hello Bob!"`
 `helloName("Alice")` | &#10132; `"Hello Alice!"`
@@ -15,7 +15,7 @@ Example|Expected
 `helloName("Hello!")` | &#10132; `"Hello Hello!!"`
 ## makeAbba
 Given two strings, a and b, return the result of putting them together in the order abba, e.g. "Hi" and "Bye" returns "HiByeByeHi".
-Example|Expected
+makeAbba(a, b)|Expected
 -|-
 `makeAbba("Hi", "Bye")` | &#10132; `"HiByeByeHi"`
 `makeAbba("Yo", "Alice")` | &#10132; `"YoAliceAliceYo"`
@@ -27,7 +27,7 @@ Example|Expected
 `makeAbba("Ya", "Ya")` | &#10132; `"YaYaYaYa"`
 ## makeTags
 The web is built with HTML strings like "<i>Yay</i>" which draws Yay as italic text. In this example, the "i" tag makes <i> and </i> which surround the word "Yay". Given tag and word strings, create the HTML string with tags around the word, e.g. "<i>Yay</i>".
-Example|Expected
+makeTags(tag, word)|Expected
 -|-
 `makeTags("i", "Yay")` | &#10132; `"<i>Yay</i>"`
 `makeTags("i", "Hello")` | &#10132; `"<i>Hello</i>"`
@@ -39,7 +39,7 @@ Example|Expected
 `makeTags("i", "")` | &#10132; `"<i></i>"`
 ## makeOutWord
 Given an "out" string length 4, such as "<<>>", and a word, return a new string where the word is in the middle of the out string, e.g. "<<word>>". Note: use str.substring(i, j) to extract the String starting at index i and going up to but not including index j.
-Example|Expected
+makeOutWord(out, word)|Expected
 -|-
 `makeOutWord("<<>>", "Yay")` | &#10132; `"<<Yay>>"`
 `makeOutWord("<<>>", "WooHoo")` | &#10132; `"<<WooHoo>>"`
@@ -48,7 +48,7 @@ Example|Expected
 `makeOutWord("abyz", "YAY")` | &#10132; `"abYAYyz"`
 ## extraEnd
 Given a string, return a new string made of 3 copies of the last 2 chars of the original string. The string length will be at least 2.
-Example|Expected
+extraEnd(str)|Expected
 -|-
 `extraEnd("Hello")` | &#10132; `"lololo"`
 `extraEnd("ab")` | &#10132; `"ababab"`
@@ -57,7 +57,7 @@ Example|Expected
 `extraEnd("Code")` | &#10132; `"dedede"`
 ## firstTwo
 Given a string, return the string made of its first two chars, so the String "Hello" yields "He". If the string is shorter than length 2, return whatever there is, so "X" yields "X", and the empty string "" yields the empty string "". Note that str.length() returns the length of a string.
-Example|Expected
+firstTwo(str)|Expected
 -|-
 `firstTwo("Hello")` | &#10132; `"He"`
 `firstTwo("abcdefg")` | &#10132; `"ab"`
@@ -69,7 +69,7 @@ Example|Expected
 `firstTwo("hiya")` | &#10132; `"hi"`
 ## firstHalf
 Given a string of even length, return the first half. So the string "WooHoo" yields "Woo".
-Example|Expected
+firstHalf(str)|Expected
 -|-
 `firstHalf("WooHoo")` | &#10132; `"WooHoo"`
 `firstHalf("HelloThere")` | &#10132; `"HelloThere"`
@@ -80,7 +80,7 @@ Example|Expected
 `firstHalf("kitten")` | &#10132; `"kitten"`
 ## withoutEnd
 Given a string, return a version without the first and last char, so "Hello" yields "ell". The string length will be at least 2.
-Example|Expected
+withoutEnd(str)|Expected
 -|-
 `withoutEnd("Hello")` | &#10132; `"ell"`
 `withoutEnd("java")` | &#10132; `"av"`
@@ -92,7 +92,7 @@ Example|Expected
 `withoutEnd("woohoo")` | &#10132; `"ooho"`
 ## comboString
 Given 2 strings, a and b, return a string of the form short+long+short, with the shorter string on the outside and the longer string on the inside. The strings will not be the same length, but they may be empty (length 0).
-Example|Expected
+comboString(a, b)|Expected
 -|-
 `comboString("Hello", "hi")` | &#10132; `"hiHellohi"`
 `comboString("Hi", "Hello")` | &#10132; `"HiHelloHi"`
@@ -108,7 +108,7 @@ Example|Expected
 `comboString("xyz", "ab")` | &#10132; `"abxyzab"`
 ## nonStart
 Given 2 strings, return their concatenation, except omit the first char of each. The strings will be at least length 1.
-Example|Expected
+nonStart(a, b)|Expected
 -|-
 `nonStart("Hello", "There")` | &#10132; `"ellohere"`
 `nonStart("java", "code")` | &#10132; `"avaode"`
@@ -121,7 +121,7 @@ Example|Expected
 `nonStart("mart", "dart")` | &#10132; `"artart"`
 ## left2
 Given a string, return a "rotated left 2" version where the first 2 chars are moved to the end. The string length will be at least 2.
-Example|Expected
+left2(str)|Expected
 -|-
 `left2("Hello")` | &#10132; `"lloHe"`
 `left2("java")` | &#10132; `"vaja"`
@@ -133,7 +133,7 @@ Example|Expected
 `left2("bricks")` | &#10132; `"icksbr"`
 ## right2
 Given a string, return a "rotated right 2" version where the last 2 chars are moved to the start. The string length will be at least 2.
-Example|Expected
+right2(str)|Expected
 -|-
 `right2("Hello")` | &#10132; `"loHel"`
 `right2("java")` | &#10132; `"vaja"`
@@ -143,7 +143,7 @@ Example|Expected
 `right2("12345")` | &#10132; `"45123"`
 ## theEnd
 Given a string, return a string length 1 from its front, unless front is false, in which case return a string length 1 from its back. The string will be non-empty.
-Example|Expected
+theEnd(str, front)|Expected
 -|-
 `theEnd("Hello", true)` | &#10132; `"H"`
 `theEnd("Hello", false)` | &#10132; `"o"`
@@ -157,7 +157,7 @@ Example|Expected
 `theEnd("code", false)` | &#10132; `"e"`
 ## withoutEnd2
 Given a string, return a version without both the first and last char of the string. The string may be any length, including 0.
-Example|Expected
+withoutEnd2(str)|Expected
 -|-
 `withoutEnd2("Hello")` | &#10132; `"ell"`
 `withoutEnd2("abc")` | &#10132; `"b"`
@@ -168,7 +168,7 @@ Example|Expected
 `withoutEnd2("java code")` | &#10132; `"ava cod"`
 ## middleTwo
 Given a string of even length, return a string made of the middle two chars, so the string "string" yields "ri". The string length will be at least 2.
-Example|Expected
+middleTwo(str)|Expected
 -|-
 `middleTwo("string")` | &#10132; `""`
 `middleTwo("code")` | &#10132; `""`
@@ -177,7 +177,7 @@ Example|Expected
 `middleTwo("123456789")` | &#10132; `"123456789"`
 ## endsLy
 Given a string, return true if it ends in "ly".
-Example|Expected
+endsLy(str)|Expected
 -|-
 `endsLy("oddly")` | &#10132; `true`
 `endsLy("y")` | &#10132; `false`
@@ -189,7 +189,7 @@ Example|Expected
 `endsLy("evenly")` | &#10132; `true`
 ## nTwice
 Given a string and an int n, return a string made of the first and last n chars from the string. The string length will be at least n.
-Example|Expected
+nTwice(str, n)|Expected
 -|-
 `nTwice("hello", 2)` | &#10132; `"helo"`
 `nTwice("Chocolate", 3)` | &#10132; `"Choate"`
@@ -200,7 +200,7 @@ Example|Expected
 `nTwice("Code", 2)` | &#10132; `"Code"`
 ## twoChar
 Given a string and an index, return a string length 2 starting at the given index. If the index is too big or too small to define a string length 2, use the first 2 chars. The string length will be at least 2.
-Example|Expected
+twoChar(str, index)|Expected
 -|-
 `twoChar("java", 0)` | &#10132; `"ja"`
 `twoChar("java", 2)` | &#10132; `"va"`
@@ -219,7 +219,7 @@ Example|Expected
 `twoChar("yay", 0)` | &#10132; `"ya"`
 ## middleThree
 Given a string of odd length, return the string length 3 from its middle, so "Candy" yields "and". The string length will be at least 3.
-Example|Expected
+middleThree(str)|Expected
 -|-
 `middleThree("Candy")` | &#10132; `"and"`
 `middleThree("and")` | &#10132; `"and"`
@@ -230,7 +230,7 @@ Example|Expected
 `middleThree("XabcxyzabcX")` | &#10132; `"xyz"`
 ## hasBad
 Given a string, return true if "bad" appears starting at index 0 or 1 in the string, such as with "badxxx" or "xbadxx" but not "xxbadxx". The string may be any length, including 0.
-Example|Expected
+hasBad(str)|Expected
 -|-
 `hasBad("badxx")` | &#10132; `true`
 `hasBad("xbadxx")` | &#10132; `true`
@@ -244,7 +244,7 @@ Example|Expected
 `hasBad("badyy")` | &#10132; `true`
 ## atFirst
 Given a string, return a string length 2 made of its first 2 chars. If the string length is less than 2, use '@' for the missing chars.
-Example|Expected
+atFirst(str)|Expected
 -|-
 `atFirst("hello")` | &#10132; `"he"`
 `atFirst("hi")` | &#10132; `"hi"`
@@ -255,7 +255,7 @@ Example|Expected
 `atFirst("j")` | &#10132; `"j@"`
 ## lastChars
 Given 2 strings, a and b, return a new string made of the first char of a and the last char of b, so "yo" and "java" yields "ya". If either string is length 0, use '@' for its missing char.
-Example|Expected
+lastChars(a, b)|Expected
 -|-
 `lastChars("last", "chars")` | &#10132; `"ls"`
 `lastChars("yo", "java")` | &#10132; `"ya"`
@@ -268,7 +268,7 @@ Example|Expected
 `lastChars("kitten", "zip")` | &#10132; `"kp"`
 ## conCat
 Given two strings, append them together (known as "concatenation") and return the result. However, if the concatenation creates a double-char, then omit one of the chars, so "abc" and "cat" yields "abcat".
-Example|Expected
+conCat(a, b)|Expected
 -|-
 `conCat("abc", "cat")` | &#10132; `"abcat"`
 `conCat("dog", "cat")` | &#10132; `"dogcat"`
@@ -278,7 +278,7 @@ Example|Expected
 `conCat("pig", "doggy")` | &#10132; `"pigdoggy"`
 ## lastTwo
 Given a string of any length, return a new string where the last 2 chars, if present, are swapped, so "coding" yields "codign".
-Example|Expected
+lastTwo(str)|Expected
 -|-
 `lastTwo("coding")` | &#10132; `"codign"`
 `lastTwo("cat")` | &#10132; `"cta"`
@@ -287,7 +287,7 @@ Example|Expected
 `lastTwo("")` | &#10132; `""`
 ## seeColor
 Given a string, if the string begins with "red" or "blue" return that color string, otherwise return the empty string.
-Example|Expected
+seeColor(str)|Expected
 -|-
 `seeColor("redxx")` | &#10132; `"red"`
 `seeColor("xxred")` | &#10132; `""`
@@ -302,7 +302,7 @@ Example|Expected
 `seeColor("xyzred")` | &#10132; `""`
 ## frontAgain
 Given a string, return true if the first 2 chars in the string also appear at the end of the string, such as with "edited".
-Example|Expected
+frontAgain(str)|Expected
 -|-
 `frontAgain("edited")` | &#10132; `true`
 `frontAgain("edit")` | &#10132; `false`
@@ -317,7 +317,7 @@ Example|Expected
 `frontAgain("javaja")` | &#10132; `true`
 ## minCat
 Given two strings, append them together (known as "concatenation") and return the result. However, if the strings are different lengths, omit chars from the longer string so it is the same length as the shorter string. So "Hello" and "Hi" yield "loHi". The strings may be any length.
-Example|Expected
+minCat(a, b)|Expected
 -|-
 `minCat("Hello", "Hi")` | &#10132; `"loHi"`
 `minCat("Hello", "java")` | &#10132; `"ellojava"`
@@ -327,7 +327,7 @@ Example|Expected
 `minCat("abc", "")` | &#10132; `""`
 ## extraFront
 Given a string, return a new string made of 3 copies of the first 2 chars of the original string. The string may be any length. If there are fewer than 2 chars, use whatever is there.
-Example|Expected
+extraFront(str)|Expected
 -|-
 `extraFront("Hello")` | &#10132; `"HeHeHe"`
 `extraFront("ab")` | &#10132; `"ababab"`
@@ -337,7 +337,7 @@ Example|Expected
 `extraFront("Code")` | &#10132; `"CoCoCo"`
 ## without2
 Given a string, if a length 2 substring appears at both its beginning and end, return a string without the substring at the beginning, so "HelloHe" yields "lloHe". The substring may overlap with itself, so "Hi" yields "". Otherwise, return the original string unchanged.
-Example|Expected
+without2(str)|Expected
 -|-
 `without2("HelloHe")` | &#10132; `"lloHe"`
 `without2("HelloHi")` | &#10132; `"HelloHi"`
@@ -350,7 +350,7 @@ Example|Expected
 `without2("Fruits")` | &#10132; `"Fruits"`
 ## deFront
 Given a string, return a version without the first 2 chars. Except keep the first char if it is 'a' and keep the second char if it is 'b'. The string may be any length. Harder than it looks.
-Example|Expected
+deFront(str)|Expected
 -|-
 `deFront("Hello")` | &#10132; `"llo"`
 `deFront("java")` | &#10132; `"va"`
@@ -373,7 +373,7 @@ Example|Expected
 `deFront("zzz")` | &#10132; `"z"`
 ## startWord
 Given a string and a second "word" string, we'll say that the word matches the string if it appears at the front of the string, except its first char does not need to match exactly. On a match, return the front of the string, or otherwise return the empty string. So, so with the string "hippo" the word "hi" returns "hi" and "xip" returns "hip". The word will be at least length 1.
-Example|Expected
+startWord(str, word)|Expected
 -|-
 `startWord("hippo", "hi")` | &#10132; `"hi"`
 `startWord("hippo", "xip")` | &#10132; `"hip"`
@@ -392,7 +392,7 @@ Example|Expected
 `startWord("kit", "cit")` | &#10132; `"kit"`
 ## withoutX
 Given a string, if the first or last chars are 'x', return the string without those 'x' chars, and otherwise return the string unchanged.
-Example|Expected
+withoutX(str)|Expected
 -|-
 `withoutX("xHix")` | &#10132; `"Hi"`
 `withoutX("xHi")` | &#10132; `"Hi"`
@@ -408,7 +408,7 @@ Example|Expected
 `withoutX("Hexllo")` | &#10132; `"Hexllo"`
 ## withoutX2
 Given a string, if one or both of the first 2 chars is 'x', return the string without those 'x' chars, and otherwise return the string unchanged. This is a little harder than it looks.
-Example|Expected
+withoutX2(str)|Expected
 -|-
 `withoutX2("xHi")` | &#10132; `"Hi"`
 `withoutX2("Hxi")` | &#10132; `"Hi"`

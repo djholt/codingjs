@@ -1,7 +1,7 @@
 # String 3
 ## countYZ
 Given a string, count the number of words ending in 'y' or 'z' -- so the 'y' in "heavy" and the 'z' in "fez" count, but not the 'y' in "yellow" (not case sensitive). We'll say that a y or z is at the end of a word if there is not an alphabetic letter immediately following it. (Note: Character.isLetter(char) tests if a char is an alphabetic letter.)
-Example|Expected
+countYZ(str)|Expected
 -|-
 `countYZ("fez day")` | &#10132; `2`
 `countYZ("day fez")` | &#10132; `2`
@@ -16,7 +16,7 @@ Example|Expected
 `countYZ("zxyx")` | &#10132; `0`
 ## withoutString
 Given two strings, base and remove, return a version of the base string where all instances of the remove string have been removed (not case sensitive). You may assume that the remove string is length 1 or more. Remove only non-overlapping instances, so with "xxx" removing "xx" leaves "x".
-Example|Expected
+withoutString(base, remove)|Expected
 -|-
 `withoutString("Hello there", "llo")` | &#10132; `"He there"`
 `withoutString("Hello there", "e")` | &#10132; `"Hllo thr"`
@@ -39,7 +39,7 @@ Example|Expected
 `withoutString("Hi HoHo", "Ho")` | &#10132; `"Hi "`
 ## equalIsNot
 Given a string, return true if the number of appearances of "is" anywhere in the string is equal to the number of appearances of "not" anywhere in the string (case sensitive).
-Example|Expected
+equalIsNot(str)|Expected
 -|-
 `equalIsNot("This is not")` | &#10132; `false`
 `equalIsNot("This is notnot")` | &#10132; `true`
@@ -53,7 +53,7 @@ Example|Expected
 `equalIsNot("mis3notpotbotis")` | &#10132; `false`
 ## gHappy
 We'll say that a lowercase 'g' in a string is "happy" if there is another 'g' immediately to its left or right. Return true if all the g's in the given string are happy.
-Example|Expected
+gHappy(str)|Expected
 -|-
 `gHappy("xxggxx")` | &#10132; `true`
 `gHappy("xxgxx")` | &#10132; `false`
@@ -69,7 +69,7 @@ Example|Expected
 `gHappy("yyygggxyy")` | &#10132; `true`
 ## countTriple
 We'll say that a "triple" in a string is a char appearing three times in a row. Return the number of triples in the given string. The triples may overlap.
-Example|Expected
+countTriple(str)|Expected
 -|-
 `countTriple("abcXXXabc")` | &#10132; `1`
 `countTriple("xxxabyyyycd")` | &#10132; `3`
@@ -85,7 +85,7 @@ Example|Expected
 `countTriple("122abhhh2")` | &#10132; `1`
 ## sumDigits
 Given a string, return the sum of the digits 0-9 that appear in the string, ignoring all other characters. Return 0 if there are no digits in the string. (Note: Character.isDigit(char) tests if a char is one of the chars '0', '1', .. '9'. Integer.parseInt(string) converts a string to an int.)
-Example|Expected
+sumDigits(str)|Expected
 -|-
 `sumDigits("aa1bc2d3")` | &#10132; `6`
 `sumDigits("aa11b33")` | &#10132; `8`
@@ -98,7 +98,7 @@ Example|Expected
 `sumDigits("5432a")` | &#10132; `14`
 ## sameEnds
 Given a string, return the longest substring that appears at both the beginning and end of the string without overlapping. For example, sameEnds("abXab") is "ab".
-Example|Expected
+sameEnds(string)|Expected
 -|-
 `sameEnds("abXYab")` | &#10132; `"ab"`
 `sameEnds("xx")` | &#10132; `"x"`
@@ -114,7 +114,7 @@ Example|Expected
 `sameEnds("mymmy")` | &#10132; `"my"`
 ## mirrorEnds
 Given a string, look for a mirror image (backwards) string at both the beginning and end of the given string. In other words, zero or more characters at the very begining of the given string, and at the very end of the string in reverse order (possibly overlapping). For example, the string "abXYZba" has the mirror end "ab".
-Example|Expected
+mirrorEnds(string)|Expected
 -|-
 `mirrorEnds("abXYZba")` | &#10132; `"ab"`
 `mirrorEnds("abca")` | &#10132; `"a"`
@@ -129,7 +129,7 @@ Example|Expected
 `mirrorEnds("band andab")` | &#10132; `"ba"`
 ## maxBlock
 Given a string, return the length of the largest "block" in the string. A block is a run of adjacent chars that are the same.
-Example|Expected
+maxBlock(str)|Expected
 -|-
 `maxBlock("hoopla")` | &#10132; `2`
 `maxBlock("abbCCCddBBBxx")` | &#10132; `3`
@@ -144,7 +144,7 @@ Example|Expected
 `maxBlock("XX2222BBBbbXX2222")` | &#10132; `4`
 ## sumNumbers
 Given a string, return the sum of the numbers appearing in the string, ignoring all other characters. A number is a series of 1 or more digit chars in a row. (Note: Character.isDigit(char) tests if a char is one of the chars '0', '1', .. '9'. Integer.parseInt(string) converts a string to an int.)
-Example|Expected
+sumNumbers(str)|Expected
 -|-
 `sumNumbers("abc123xyz")` | &#10132; `123`
 `sumNumbers("aa11b33")` | &#10132; `44`
@@ -157,7 +157,7 @@ Example|Expected
 `sumNumbers("a22bbb3")` | &#10132; `25`
 ## notReplace
 Given a string, return a string where every appearance of the lowercase word "is" has been replaced with "is not". The word "is" should not be immediately preceeded or followed by a letter -- so for example the "is" in "this" does not count. (Note: Character.isLetter(char) tests if a char is a letter.)
-Example|Expected
+notReplace(str)|Expected
 -|-
 `notReplace("is test")` | &#10132; `"is not test"`
 `notReplace("is-is")` | &#10132; `"is not-is not"`

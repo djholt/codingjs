@@ -1,91 +1,91 @@
-function cigarParty() {
+function cigarParty(cigars, isWeekend) {
 }
 
-function dateFashion() {
+function dateFashion(you, date) {
 }
 
-function squirrelPlay() {
+function squirrelPlay(temp, isSummer) {
 }
 
-function caughtSpeeding() {
+function caughtSpeeding(speed, isBirthday) {
 }
 
-function sortaSum() {
+function sortaSum(a, b) {
 }
 
-function alarmClock() {
+function alarmClock(day, vacation) {
 }
 
-function love6() {
+function love6(a, b) {
 }
 
-function in1To10() {
+function in1To10(n, outsideMode) {
 }
 
-function specialEleven() {
+function specialEleven(n) {
 }
 
-function more20() {
+function more20(n) {
 }
 
-function old35() {
+function old35(n) {
 }
 
-function less20() {
+function less20(n) {
 }
 
-function nearTen() {
+function nearTen(num) {
 }
 
-function teenSum() {
+function teenSum(a, b) {
 }
 
-function answerCell() {
+function answerCell(isMorning, isMom, isAsleep) {
 }
 
-function teaParty() {
+function teaParty(tea, candy) {
 }
 
-function fizzString() {
+function fizzString(str) {
 }
 
-function fizzString2() {
+function fizzString2(n) {
 }
 
-function twoAsOne() {
+function twoAsOne(a, b, c) {
 }
 
-function inOrder() {
+function inOrder(a, b, c, bOk) {
 }
 
-function inOrderEqual() {
+function inOrderEqual(a, b, c, equalOk) {
 }
 
-function lastDigit() {
+function lastDigit(a, b, c) {
 }
 
-function lessBy10() {
+function lessBy10(a, b, c) {
 }
 
-function withoutDoubles() {
+function withoutDoubles(die1, die2, noDoubles) {
 }
 
-function maxMod5() {
+function maxMod5(a, b) {
 }
 
-function redTicket() {
+function redTicket(a, b, c) {
 }
 
-function greenTicket() {
+function greenTicket(a, b, c) {
 }
 
-function blueTicket() {
+function blueTicket(a, b, c) {
 }
 
-function shareDigit() {
+function shareDigit(a, b) {
 }
 
-function sumLimit() {
+function sumLimit(a, b) {
 }
 
 module.exports = {

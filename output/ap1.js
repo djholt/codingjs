@@ -1,64 +1,64 @@
-function scoresIncreasing() {
+function scoresIncreasing(scores) {
 }
 
-function scores100() {
+function scores100(scores) {
 }
 
-function scoresClump() {
+function scoresClump(scores) {
 }
 
-function scoresAverage() {
+function scoresAverage(scores) {
 }
 
-function wordsCount() {
+function wordsCount(words, len) {
 }
 
-function wordsFront() {
+function wordsFront(words, n) {
 }
 
-function wordsWithoutList() {
+function wordsWithoutList(words, len) {
 }
 
-function hasOne() {
+function hasOne(n) {
 }
 
-function dividesSelf() {
+function dividesSelf(n) {
 }
 
-function copyEvens() {
+function copyEvens(nums, count) {
 }
 
-function copyEndy() {
+function copyEndy(nums, count) {
 }
 
-function matchUp() {
+function matchUp(a, b) {
 }
 
-function scoreUp() {
+function scoreUp(key, answers) {
 }
 
-function wordsWithout() {
+function wordsWithout(words, target) {
 }
 
-function scoresSpecial() {
+function scoresSpecial(a, b) {
 }
 
-function sumHeights() {
+function sumHeights(heights, start, end) {
 }
 
-function sumHeights2() {
+function sumHeights2(heights, start, end) {
 }
 
-function bigHeights() {
+function bigHeights(heights, start, end) {
 }
 
-function userCompare() {
+function userCompare(aName, aId, bName, bId) {
 }
 
-function mergeTwo() {
+function mergeTwo(a, b, n) {
 }
 
-function commonTwo() {
+function commonTwo(a, b) {
 }
 
 module.exports = {

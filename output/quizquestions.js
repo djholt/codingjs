@@ -1,13 +1,13 @@
-function sumDownBy2() {
+function sumDownBy2(n) {
 }
 
-function makes8() {
+function makes8(a, b) {
 }
 
-function countOdds() {
+function countOdds(nums) {
 }
 
-function fib() {
+function fib(n) {
 }
 
 module.exports = {

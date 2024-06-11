@@ -1,52 +1,52 @@
-function stringTimes() {
+function stringTimes(str, n) {
 }
 
-function frontTimes() {
+function frontTimes(str, n) {
 }
 
-function countXX() {
+function countXX(str) {
 }
 
-function doubleX() {
+function doubleX(str) {
 }
 
-function stringBits() {
+function stringBits(str) {
 }
 
-function stringSplosion() {
+function stringSplosion(str) {
 }
 
-function last2() {
+function last2(str) {
 }
 
-function arrayCount9() {
+function arrayCount9(nums) {
 }
 
-function arrayFront9() {
+function arrayFront9(nums) {
 }
 
-function array123() {
+function array123(nums) {
 }
 
-function stringMatch() {
+function stringMatch(a, b) {
 }
 
-function stringX() {
+function stringX(str) {
 }
 
-function altPairs() {
+function altPairs(str) {
 }
 
-function stringYak() {
+function stringYak(str) {
 }
 
-function array667() {
+function array667(nums) {
 }
 
-function noTriples() {
+function noTriples(nums) {
 }
 
-function has271() {
+function has271(nums) {
 }
 
 module.exports = {

@@ -1,112 +1,112 @@
-function findLowestIndex() {
+function findLowestIndex(nums) {
 }
 
-function countEvens() {
+function countEvens(nums) {
 }
 
-function bigDiff() {
+function bigDiff(nums) {
 }
 
-function centeredAverage() {
+function centeredAverage(nums) {
 }
 
-function sum13() {
+function sum13(nums) {
 }
 
-function sum67() {
+function sum67(nums) {
 }
 
-function has22() {
+function has22(nums) {
 }
 
-function lucky13() {
+function lucky13(nums) {
 }
 
-function sum28() {
+function sum28(nums) {
 }
 
-function more14() {
+function more14(nums) {
 }
 
-function prependSum() {
+function prependSum(nums) {
 }
 
-function fizzArray() {
+function fizzArray(n) {
 }
 
-function only14() {
+function only14(nums) {
 }
 
-function fizzArray2() {
+function fizzArray2(n) {
 }
 
-function no14() {
+function no14(nums) {
 }
 
-function isEverywhere() {
+function isEverywhere(nums, val) {
 }
 
-function either24() {
+function either24(nums) {
 }
 
-function matchUp() {
+function matchUp(nums1, nums2) {
 }
 
-function has77() {
+function has77(nums) {
 }
 
-function has12() {
+function has12(nums) {
 }
 
-function modThree() {
+function modThree(nums) {
 }
 
-function findTheMedian() {
+function findTheMedian(nums) {
 }
 
-function haveThree() {
+function haveThree(nums) {
 }
 
-function twoTwo() {
+function twoTwo(nums) {
 }
 
-function sameEnds() {
+function sameEnds(nums, len) {
 }
 
-function tripleUp() {
+function tripleUp(nums) {
 }
 
-function fizzArray3() {
+function fizzArray3(start, end) {
 }
 
-function shiftLeft() {
+function shiftLeft(nums) {
 }
 
-function tenRun() {
+function tenRun(nums) {
 }
 
-function pre4() {
+function pre4(nums) {
 }
 
-function post4() {
+function post4(nums) {
 }
 
-function notAlone() {
+function notAlone(nums, val) {
 }
 
-function zeroFront() {
+function zeroFront(nums) {
 }
 
-function withoutTen() {
+function withoutTen(nums) {
 }
 
-function zeroMax() {
+function zeroMax(nums) {
 }
 
-function evenOdd() {
+function evenOdd(nums) {
 }
 
-function fizzBuzz() {
+function fizzBuzz(start, end) {
 }
 
 module.exports = {

@@ -1,91 +1,91 @@
-function factorial() {
+function factorial(n) {
 }
 
-function bunnyEars() {
+function bunnyEars(bunnies) {
 }
 
-function fibonacci() {
+function fibonacci(n) {
 }
 
-function bunnyEars2() {
+function bunnyEars2(bunnies) {
 }
 
-function triangle() {
+function triangle(rows) {
 }
 
-function sumDigits1() {
+function sumDigits1(n) {
 }
 
-function count7() {
+function count7(n) {
 }
 
-function count8() {
+function count8(n) {
 }
 
-function powerN() {
+function powerN(base, n) {
 }
 
-function countX() {
+function countX(str) {
 }
 
-function countHi() {
+function countHi(str) {
 }
 
-function changeXY() {
+function changeXY(str) {
 }
 
-function changePi() {
+function changePi(str) {
 }
 
-function noX() {
+function noX(str) {
 }
 
-function array6() {
+function array6(nums, i) {
 }
 
-function array11() {
+function array11(nums, i) {
 }
 
-function array220() {
+function array220(nums, i) {
 }
 
-function allStar() {
+function allStar(str) {
 }
 
-function pairStar() {
+function pairStar(str) {
 }
 
-function endX() {
+function endX(str) {
 }
 
-function countPairs() {
+function countPairs(str) {
 }
 
-function countAbc() {
+function countAbc(str) {
 }
 
-function count11() {
+function count11(str) {
 }
 
-function stringClean() {
+function stringClean(str) {
 }
 
-function countHi2() {
+function countHi2(str) {
 }
 
-function starBit() {
+function starBit(str) {
 }
 
-function nestParen() {
+function nestParen(str) {
 }
 
-function strCount() {
+function strCount(str, sub) {
 }
 
-function strCopies() {
+function strCopies(str, sub, n) {
 }
 
-function strDist() {
+function strDist(str, sub) {
 }
 
 module.exports = {

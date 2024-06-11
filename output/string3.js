@@ -1,34 +1,34 @@
-function countYZ() {
+function countYZ(str) {
 }
 
-function withoutString() {
+function withoutString(base, remove) {
 }
 
-function equalIsNot() {
+function equalIsNot(str) {
 }
 
-function gHappy() {
+function gHappy(str) {
 }
 
-function countTriple() {
+function countTriple(str) {
 }
 
-function sumDigits() {
+function sumDigits(str) {
 }
 
-function sameEnds() {
+function sameEnds(string) {
 }
 
-function mirrorEnds() {
+function mirrorEnds(string) {
 }
 
-function maxBlock() {
+function maxBlock(str) {
 }
 
-function sumNumbers() {
+function sumNumbers(str) {
 }
 
-function notReplace() {
+function notReplace(str) {
 }
 
 module.exports = {

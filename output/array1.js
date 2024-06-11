@@ -1,82 +1,82 @@
-function firstLast6() {
+function firstLast6(nums) {
 }
 
-function sameFirstLast() {
+function sameFirstLast(nums) {
 }
 
 function makePi() {
 }
 
-function commonEnd() {
+function commonEnd(a, b) {
 }
 
-function sum3() {
+function sum3(nums) {
 }
 
-function rotateLeft3() {
+function rotateLeft3(nums) {
 }
 
-function reverse3() {
+function reverse3(nums) {
 }
 
-function maxEnd3() {
+function maxEnd3(nums) {
 }
 
-function sum2() {
+function sum2(nums) {
 }
 
-function middleWay() {
+function middleWay(a, b) {
 }
 
-function makeEnds() {
+function makeEnds(nums) {
 }
 
-function has23() {
+function has23(nums) {
 }
 
-function no23() {
+function no23(nums) {
 }
 
-function makeLast() {
+function makeLast(nums) {
 }
 
-function double23() {
+function double23(nums) {
 }
 
-function fix23() {
+function fix23(nums) {
 }
 
-function start1() {
+function start1(a, b) {
 }
 
-function biggerTwo() {
+function biggerTwo(a, b) {
 }
 
-function makeMiddle() {
+function makeMiddle(nums) {
 }
 
-function plusTwo() {
+function plusTwo(a, b) {
 }
 
-function swapEnds() {
+function swapEnds(nums) {
 }
 
-function midThree() {
+function midThree(nums) {
 }
 
-function maxTriple() {
+function maxTriple(nums) {
 }
 
-function frontPiece() {
+function frontPiece(nums) {
 }
 
-function unlucky1() {
+function unlucky1(nums) {
 }
 
-function make2() {
+function make2(a, b) {
 }
 
-function front11() {
+function front11(a, b) {
 }
 
 module.exports = {

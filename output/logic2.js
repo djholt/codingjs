@@ -1,28 +1,28 @@
-function makeBricks() {
+function makeBricks(small, big, goal) {
 }
 
-function loneSum() {
+function loneSum(a, b, c) {
 }
 
-function luckySum() {
+function luckySum(a, b, c) {
 }
 
-function noTeenSum() {
+function noTeenSum(a, b, c) {
 }
 
-function roundSum() {
+function roundSum(a, b, c) {
 }
 
-function closeFar() {
+function closeFar(a, b, c) {
 }
 
-function blackjack() {
+function blackjack(a, b) {
 }
 
-function evenlySpaced() {
+function evenlySpaced(a, b, c) {
 }
 
-function makeChocolate() {
+function makeChocolate(small, big, goal) {
 }
 
 module.exports = {

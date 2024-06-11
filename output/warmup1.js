@@ -1,94 +1,94 @@
-function sleepIn() {
+function sleepIn(weekday, vacation) {
 }
 
-function monkeyTrouble() {
+function monkeyTrouble(aSmile, bSmile) {
 }
 
-function sumDouble() {
+function sumDouble(a, b) {
 }
 
-function diff21() {
+function diff21(n) {
 }
 
-function parrotTrouble() {
+function parrotTrouble(talking, hour) {
 }
 
-function makes10() {
+function makes10(a, b) {
 }
 
-function nearHundred() {
+function nearHundred(n) {
 }
 
-function posNeg() {
+function posNeg(a, b, negative) {
 }
 
-function notString() {
+function notString(str) {
 }
 
-function missingChar() {
+function missingChar(str, n) {
 }
 
-function frontBack() {
+function frontBack(str) {
 }
 
-function front3() {
+function front3(str) {
 }
 
-function backAround() {
+function backAround(str) {
 }
 
-function or35() {
+function or35(n) {
 }
 
-function front22() {
+function front22(str) {
 }
 
-function startHi() {
+function startHi(str) {
 }
 
-function icyHot() {
+function icyHot(temp1, temp2) {
 }
 
-function in1020() {
+function in1020(a, b) {
 }
 
-function hasTeen() {
+function hasTeen(a, b, c) {
 }
 
-function loneTeen() {
+function loneTeen(a, b) {
 }
 
-function delDel() {
+function delDel(str) {
 }
 
-function mixStart() {
+function mixStart(str) {
 }
 
-function startOz() {
+function startOz(str) {
 }
 
-function intMax() {
+function intMax(a, b, c) {
 }
 
-function close10() {
+function close10(a, b) {
 }
 
-function in3050() {
+function in3050(a, b) {
 }
 
-function max1020() {
+function max1020(a, b) {
 }
 
-function stringE() {
+function stringE(str) {
 }
 
-function lastDigit() {
+function lastDigit(a, b) {
 }
 
-function endUp() {
+function endUp(str) {
 }
 
-function everyNth() {
+function everyNth(str, n) {
 }
 
 module.exports = {

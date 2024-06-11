@@ -1,7 +1,7 @@
 # String 2
 ## doubleChar
 Given a string, return a string where for every char in the original, there are two chars.
-Example|Expected
+doubleChar(str)|Expected
 -|-
 `doubleChar("The")` | &#10132; `"TThhee"`
 `doubleChar("AAbb")` | &#10132; `"AAAAbbbb"`
@@ -14,7 +14,7 @@ Example|Expected
 `doubleChar("aa")` | &#10132; `"aaaa"`
 ## countHi
 Return the number of times that the string "hi" appears anywhere in the given string.
-Example|Expected
+countHi(str)|Expected
 -|-
 `countHi("abc hi ho")` | &#10132; `1`
 `countHi("ABChi hi")` | &#10132; `2`
@@ -27,7 +27,7 @@ Example|Expected
 `countHi("hiho not HOHIhi")` | &#10132; `2`
 ## catDog
 Return true if the string "cat" and "dog" appear the same number of times in the given string.
-Example|Expected
+catDog(str)|Expected
 -|-
 `catDog("catdog")` | &#10132; `true`
 `catDog("catcat")` | &#10132; `false`
@@ -44,7 +44,7 @@ Example|Expected
 `catDog("")` | &#10132; `true`
 ## countCode
 Return the number of times that the string "code" appears anywhere in the given string, except we'll accept any letter for the 'd', so "cope" and "cooe" count.
-Example|Expected
+countCode(str)|Expected
 -|-
 `countCode("aaacodebbb")` | &#10132; `1`
 `countCode("codexxcode")` | &#10132; `2`
@@ -62,7 +62,7 @@ Example|Expected
 `countCode("coAcodeBcoleccoreDD")` | &#10132; `3`
 ## endOther
 Given two strings, return true if either of the strings appears at the very end of the other string, ignoring upper/lower case differences (in other words, the computation should not be "case sensitive"). Note: str.toLowerCase() returns the lowercase version of a string.
-Example|Expected
+endOther(a, b)|Expected
 -|-
 `endOther("Hiabc", "abc")` | &#10132; `true`
 `endOther("AbC", "HiaBc")` | &#10132; `true`
@@ -80,7 +80,7 @@ Example|Expected
 `endOther("ab", "12ab")` | &#10132; `true`
 ## xyzThere
 Return true if the given string contains an appearance of "xyz" where the xyz is not directly preceeded by a period (.). So "xxyz" counts but "x.xyz" does not.
-Example|Expected
+xyzThere(str)|Expected
 -|-
 `xyzThere("abcxyz")` | &#10132; `true`
 `xyzThere("abc.xyz")` | &#10132; `false`
@@ -98,7 +98,7 @@ Example|Expected
 `xyzThere("1.xyz.xyz2.xyz")` | &#10132; `false`
 ## bobThere
 Return true if the given string contains a "bob" string, but where the middle 'o' char can be any char.
-Example|Expected
+bobThere(str)|Expected
 -|-
 `bobThere("abcbob")` | &#10132; `true`
 `bobThere("b9b")` | &#10132; `true`
@@ -115,7 +115,7 @@ Example|Expected
 `bobThere("b")` | &#10132; `false`
 ## xyBalance
 We'll say that a String is xy-balanced if for all the 'x' chars in the string, there exists a 'y' char somewhere later in the string. So "xxy" is balanced, but "xyx" is not. One 'y' can balance multiple 'x's. Return true if the given string is xy-balanced.
-Example|Expected
+xyBalance(str)|Expected
 -|-
 `xyBalance("aaxbby")` | &#10132; `true`
 `xyBalance("aaxbb")` | &#10132; `false`
@@ -137,7 +137,7 @@ Example|Expected
 `xyBalance("12xabxxydxyxyzz")` | &#10132; `true`
 ## mixString
 Given two strings, a and b, create a bigger string made of the first char of a, the first char of b, the second char of a, the second char of b, and so on. Any leftover chars go at the end of the result.
-Example|Expected
+mixString(a, b)|Expected
 -|-
 `mixString("abc", "xyz")` | &#10132; `"axbycz"`
 `mixString("Hi", "There")` | &#10132; `"HTihere"`
@@ -154,7 +154,7 @@ Example|Expected
 `mixString("Long", "So")` | &#10132; `"LSoong"`
 ## repeatEnd
 Given a string and an int n, return a string made of n repetitions of the last n characters of the string. You may assume that n is between 0 and the length of the string, inclusive.
-Example|Expected
+repeatEnd(str, n)|Expected
 -|-
 `repeatEnd("Hello", 3)` | &#10132; `"llollollo"`
 `repeatEnd("Hello", 2)` | &#10132; `"lolo"`
@@ -166,7 +166,7 @@ Example|Expected
 `repeatEnd("", 0)` | &#10132; `""`
 ## repeatFront
 Given a string and an int n, return a string made of the first n characters of the string, followed by the first n-1 characters of the string, and so on. You may assume that n is between 0 and the length of the string, inclusive (i.e. n >= 0 and n <= str.length()).
-Example|Expected
+repeatFront(str, n)|Expected
 -|-
 `repeatFront("Chocolate", 4)` | &#10132; `"ChocChoChC"`
 `repeatFront("Chocolate", 3)` | &#10132; `"ChoChC"`
@@ -179,7 +179,7 @@ Example|Expected
 `repeatFront("Java", 1)` | &#10132; `"J"`
 ## repeatSeparator
 Given two strings, word and a separator sep, return a big string made of count occurrences of the word, separated by the separator string.
-Example|Expected
+repeatSeparator(word, sep, count)|Expected
 -|-
 `repeatSeparator("Word", "X", 3)` | &#10132; `"WordXWordXWord"`
 `repeatSeparator("This", "And", 2)` | &#10132; `"ThisAndThis"`
@@ -194,7 +194,7 @@ Example|Expected
 `repeatSeparator("XYZ", "a", 2)` | &#10132; `"XYZaXYZ"`
 ## prefixAgain
 Given a string, consider the prefix string made of the first N chars of the string. Does that prefix string appear somewhere else in the string? Assume that the string is not empty and that N is in the range 1..str.length().
-Example|Expected
+prefixAgain(str, n)|Expected
 -|-
 `prefixAgain("abXYabc", 1)` | &#10132; `true`
 `prefixAgain("abXYabc", 2)` | &#10132; `true`
@@ -210,7 +210,7 @@ Example|Expected
 `prefixAgain("ab", 1)` | &#10132; `false`
 ## xyzMiddle
 Given a string, does "xyz" appear in the middle of the string? To define middle, we'll say that the number of chars to the left and right of the "xyz" must differ by at most one. This problem is harder than it looks.
-Example|Expected
+xyzMiddle(str)|Expected
 -|-
 `xyzMiddle("AAxyzBB")` | &#10132; `true`
 `xyzMiddle("AxyzBB")` | &#10132; `true`
@@ -235,7 +235,7 @@ Example|Expected
 `xyzMiddle("xyzz")` | &#10132; `true`
 ## getSandwich
 A sandwich is two pieces of bread with something in between. Return the string that is between the first and last appearance of "bread" in the given string, or return the empty string "" if there are not two pieces of bread.
-Example|Expected
+getSandwich(str)|Expected
 -|-
 `getSandwich("breadjambread")` | &#10132; `"jam"`
 `getSandwich("xxbreadjambreadyy")` | &#10132; `"jam"`
@@ -251,7 +251,7 @@ Example|Expected
 `getSandwich("breadbreadbreadbread")` | &#10132; `"breadbread"`
 ## sameStarChar
 Returns true if for every '*' (star) in the string, if there are chars both immediately before and after the star, they are the same.
-Example|Expected
+sameStarChar(str)|Expected
 -|-
 `sameStarChar("xy*yzz")` | &#10132; `true`
 `sameStarChar("xy*zzz")` | &#10132; `false`
@@ -271,7 +271,7 @@ Example|Expected
 `sameStarChar("**")` | &#10132; `true`
 ## oneTwo
 Given a string, compute a new string by moving the first char to come after the next two chars, so "abc" yields "bca". Repeat this process for each subsequent group of 3 chars, so "abcdef" yields "bcaefd". Ignore any group of fewer than 3 chars at the end.
-Example|Expected
+oneTwo(str)|Expected
 -|-
 `oneTwo("abc")` | &#10132; `"bca"`
 `oneTwo("tca")` | &#10132; `"cat"`
@@ -291,7 +291,7 @@ Example|Expected
 `oneTwo("abcdefghijklkmnopqrstuvwxyz12345678")` | &#10132; `"bcaefdhigkljmnkpqostrvwuyzx231564"`
 ## zipZap
 Look for patterns like "zip" and "zap" in the string -- length-3, starting with 'z' and ending with 'p'. Return a string where for all such words, the middle letter is gone, so "zipXzap" yields "zpXzp".
-Example|Expected
+zipZap(str)|Expected
 -|-
 `zipZap("zipXzap")` | &#10132; `"zpXzp"`
 `zipZap("zopzop")` | &#10132; `"zpzp"`
@@ -307,7 +307,7 @@ Example|Expected
 `zipZap("azbcpzpp")` | &#10132; `"azbcpzp"`
 ## starOut
 Return a version of the given string, where for every star (*) in the string the star and the chars immediately to its left and right are gone. So "ab*cd" yields "ad" and "ab**cd" also yields "ad".
-Example|Expected
+starOut(str)|Expected
 -|-
 `starOut("ab*cd")` | &#10132; `"ad"`
 `starOut("ab**cd")` | &#10132; `"ad"`
@@ -329,7 +329,7 @@ Example|Expected
 `starOut("")` | &#10132; `""`
 ## plusOut
 Given a string and a non-empty word string, return a version of the original String where all chars have been replaced by pluses ("+"), except for appearances of the word string which are preserved unchanged.
-Example|Expected
+plusOut(str, word)|Expected
 -|-
 `plusOut("12xy34", "xy")` | &#10132; `"++xy++"`
 `plusOut("12xy34", "1")` | &#10132; `"1+++++"`
@@ -343,7 +343,7 @@ Example|Expected
 `plusOut("123123", "3")` | &#10132; `"++3++3"`
 ## wordEnds
 Given a string and a non-empty word string, return a string made of each char just before and just after every appearance of the word in the string. Ignore cases where there is no char before or after the word, and a char may be included twice if it is between two words.
-Example|Expected
+wordEnds(str, word)|Expected
 -|-
 `wordEnds("abcXY123XYijk", "XY")` | &#10132; `"c13i"`
 `wordEnds("XY123XY", "XY")` | &#10132; `"13"`

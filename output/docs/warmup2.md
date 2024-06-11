@@ -1,7 +1,7 @@
 # Warmup 2
 ## stringTimes
 Given a string and a non-negative int n, return a larger string that is n copies of the original string.
-Example|Expected
+stringTimes(str, n)|Expected
 -|-
 `stringTimes("Hi", 2)` | &#10132; `"HiHi"`
 `stringTimes("Hi", 3)` | &#10132; `"HiHiHi"`
@@ -15,7 +15,7 @@ Example|Expected
 `stringTimes("code", 3)` | &#10132; `"codecodecode"`
 ## frontTimes
 Given a string and a non-negative int n, we'll say that the front of the string is the first 3 chars, or whatever is there if the string is less than length 3. Return n copies of the front.
-Example|Expected
+frontTimes(str, n)|Expected
 -|-
 `frontTimes("Chocolate", 2)` | &#10132; `"ChoCho"`
 `frontTimes("Chocolate", 3)` | &#10132; `"ChoChoCho"`
@@ -26,7 +26,7 @@ Example|Expected
 `frontTimes("Abc", 0)` | &#10132; `""`
 ## countXX
 Count the number of 'xx' in the given string. We'll say that overlapping is allowed, so 'xxx' contains 2 'xx'.
-Example|Expected
+countXX(str)|Expected
 -|-
 `countXX("abcxx")` | &#10132; `1`
 `countXX("xxx")` | &#10132; `2`
@@ -39,7 +39,7 @@ Example|Expected
 `countXX("Kittensxxx")` | &#10132; `2`
 ## doubleX
 Given a string, return true if the first instance of "x" in the string is immediately followed by another "x".
-Example|Expected
+doubleX(str)|Expected
 -|-
 `doubleX("axxbb")` | &#10132; `true`
 `doubleX("axaxax")` | &#10132; `false`
@@ -53,7 +53,7 @@ Example|Expected
 `doubleX("xaxx")` | &#10132; `false`
 ## stringBits
 Given a string, return a new string made of every other char starting with the first, so "Hello" yields "Hlo".
-Example|Expected
+stringBits(str)|Expected
 -|-
 `stringBits("Hello")` | &#10132; `"Hlo"`
 `stringBits("Hi")` | &#10132; `"H"`
@@ -67,11 +67,11 @@ Example|Expected
 `stringBits("hxaxpxpxy")` | &#10132; `"happy"`
 ## stringSplosion
 Given a non-empty string like "Code" return a string like "CCoCodCode".
-Example|Expected
+stringSplosion(str)|Expected
 -|-
 ## last2
 Given a string, return the count of the number of times that a substring length 2 appears in the string and also as the last 2 chars of the string, so "hixxxhi" yields 1 (we won't count the end substring).
-Example|Expected
+last2(str)|Expected
 -|-
 `last2("hixxhi")` | &#10132; `1`
 `last2("xaxxaxaxx")` | &#10132; `1`
@@ -87,7 +87,7 @@ Example|Expected
 `last2("")` | &#10132; `0`
 ## arrayCount9
 Given an array of ints, return the number of 9's in the array.
-Example|Expected
+arrayCount9(nums)|Expected
 -|-
 `arrayCount9([1,2,9])` | &#10132; `1`
 `arrayCount9([1,9,9])` | &#10132; `2`
@@ -98,7 +98,7 @@ Example|Expected
 `arrayCount9([9,2,4,3,1])` | &#10132; `1`
 ## arrayFront9
 Given an array of ints, return true if one of the first 4 elements in the array is a 9. The array length may be less than 4.
-Example|Expected
+arrayFront9(nums)|Expected
 -|-
 `arrayFront9([1,2,9,3,4])` | &#10132; `true`
 `arrayFront9([1,2,3,4,9])` | &#10132; `false`
@@ -114,11 +114,11 @@ Example|Expected
 `arrayFront9([3,9,2,3,3])` | &#10132; `true`
 ## array123
 Given an array of ints, return true if the sequence of numbers 1, 2, 3 appears in the array somewhere.
-Example|Expected
+array123(nums)|Expected
 -|-
 ## stringMatch
 Given 2 strings, a and b, return the number of the positions where they contain the same length 2 substring. So "xxcaazz" and "xxbaaz" yields 3, since the "xx" "xx", "aa", and "az" substrings appear in the same place in both strings.
-Example|Expected
+stringMatch(a, b)|Expected
 -|-
 `stringMatch("xxcaazz", "xxbaaz")` | &#10132; `3`
 `stringMatch("abc", "abc")` | &#10132; `2`
@@ -131,7 +131,7 @@ Example|Expected
 `stringMatch("iaxxai", "aaxxaaxx")` | &#10132; `3`
 ## stringX
 Given a string, return a version where all the "x" have been removed. Except an "x" at the very start or end should not be removed.
-Example|Expected
+stringX(str)|Expected
 -|-
 `stringX("xxHxix")` | &#10132; `"xHix"`
 `stringX("abxxxcd")` | &#10132; `"abcd"`
@@ -143,7 +143,7 @@ Example|Expected
 `stringX("")` | &#10132; `""`
 ## altPairs
 Given a string, return a string made of the chars at indexes 0,1, 4,5, 8,9 ... so "kittens" yields "kien".
-Example|Expected
+altPairs(str)|Expected
 -|-
 `altPairs("kitten")` | &#10132; `"kien"`
 `altPairs("Chocolate")` | &#10132; `"Chole"`
@@ -155,7 +155,7 @@ Example|Expected
 `altPairs("ThisThatTheOther")` | &#10132; `"ThThThth"`
 ## stringYak
 Suppose the string "yak" is unlucky. Given a string, return a version where all the "yak" are removed, but the "a" can be any char. The "yak" strings will not overlap.
-Example|Expected
+stringYak(str)|Expected
 -|-
 `stringYak("yakpak")` | &#10132; `"pak"`
 `stringYak("pakyak")` | &#10132; `"pak"`
@@ -166,7 +166,7 @@ Example|Expected
 `stringYak("xxxyakyyyakzzz")` | &#10132; `"xxxyyzzz"`
 ## array667
 Given an array of ints, return the number of times that two 6's are next to each other in the array. Also count instances where the second "6" is actually a 7.
-Example|Expected
+array667(nums)|Expected
 -|-
 `array667([6,6,2])` | &#10132; `1`
 `array667([6,6,2,6])` | &#10132; `1`
@@ -183,7 +183,7 @@ Example|Expected
 `array667([1,2,3,6,6])` | &#10132; `1`
 ## noTriples
 Given an array of ints, we'll say that a triple is a value appearing 3 times in a row in the array. Return true if the array does not contain any triples.
-Example|Expected
+noTriples(nums)|Expected
 -|-
 `noTriples([1,1,2,2,1])` | &#10132; `true`
 `noTriples([1,1,2,2,2,1])` | &#10132; `false`
@@ -196,7 +196,7 @@ Example|Expected
 `noTriples([])` | &#10132; `true`
 ## has271
 Given an array of ints, return true if it contains a 2, 7, 1 pattern -- a value, followed by the value plus 5, followed by the value minus 1. Additionally the 271 counts even if the "1" differs by 2 or less from the correct value.
-Example|Expected
+has271(nums)|Expected
 -|-
 `has271([1,2,7,1])` | &#10132; `true`
 `has271([1,2,8,1])` | &#10132; `false`

@@ -1,28 +1,28 @@
-function maxSpan() {
+function maxSpan(nums) {
 }
 
-function fix34() {
+function fix34(nums) {
 }
 
-function fix45() {
+function fix45(nums) {
 }
 
-function canBalance() {
+function canBalance(nums) {
 }
 
-function linearIn() {
+function linearIn(outer, inner) {
 }
 
-function squareUp() {
+function squareUp(n) {
 }
 
-function seriesUp() {
+function seriesUp(n) {
 }
 
-function maxMirror() {
+function maxMirror(nums) {
 }
 
-function countClumps() {
+function countClumps(nums) {
 }
 
 module.exports = {

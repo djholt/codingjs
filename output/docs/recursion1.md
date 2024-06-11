@@ -1,7 +1,7 @@
 # Recursion 1
 ## factorial
 Given n of 1 or more, return the factorial of n, which is n * (n-1) * (n-2) ... 1. Compute the result recursively (without loops).
-Example|Expected
+factorial(n)|Expected
 -|-
 `factorial(1)` | &#10132; `1`
 `factorial(2)` | &#10132; `2`
@@ -14,7 +14,7 @@ Example|Expected
 `factorial(12)` | &#10132; `479001600`
 ## bunnyEars
 We have a number of bunnies and each bunny has two big floppy ears. We want to compute the total number of ears across all the bunnies recursively (without loops or multiplication).
-Example|Expected
+bunnyEars(bunnies)|Expected
 -|-
 `bunnyEars(0)` | &#10132; `0`
 `bunnyEars(1)` | &#10132; `2`
@@ -27,7 +27,7 @@ Example|Expected
 `bunnyEars(234)` | &#10132; `468`
 ## fibonacci
 The fibonacci sequence is a famous bit of mathematics, and it happens to have a recursive definition. The first two values in the sequence are 0 and 1 (essentially 2 base cases). Each subsequent value is the sum of the previous two values, so the whole sequence is: 0, 1, 1, 2, 3, 5, 8, 13, 21 and so on. Define a recursive fibonacci(n) method that returns the nth fibonacci number, with n=0 representing the start of the sequence.
-Example|Expected
+fibonacci(n)|Expected
 -|-
 `fibonacci(0)` | &#10132; `0`
 `fibonacci(1)` | &#10132; `1`
@@ -39,7 +39,7 @@ Example|Expected
 `fibonacci(7)` | &#10132; `13`
 ## bunnyEars2
 We have bunnies standing in a line, numbered 1, 2, ... The odd bunnies (1, 3, ..) have the normal 2 ears. The even bunnies (2, 4, ..) we'll say have 3 ears, because they each have a raised foot. Recursively return the number of "ears" in the bunny line 1, 2, ... n (without loops or multiplication).
-Example|Expected
+bunnyEars2(bunnies)|Expected
 -|-
 `bunnyEars2(0)` | &#10132; `0`
 `bunnyEars2(1)` | &#10132; `2`
@@ -51,7 +51,7 @@ Example|Expected
 `bunnyEars2(10)` | &#10132; `25`
 ## triangle
 We have triangle made of blocks. The topmost row has 1 block, the next row down has 2 blocks, the next row has 3 blocks, and so on. Compute recursively (no loops or multiplication) the total number of blocks in such a triangle with the given number of rows.
-Example|Expected
+triangle(rows)|Expected
 -|-
 `triangle(0)` | &#10132; `0`
 `triangle(1)` | &#10132; `1`
@@ -63,7 +63,7 @@ Example|Expected
 `triangle(7)` | &#10132; `28`
 ## sumDigits1
 Given a non-negative int n, return the sum of its digits recursively (no loops). Note that mod (%) by 10 yields the rightmost digit (126 % 10 is 6), while flooring division (Math.floor(n/10)) by 10 removes the rightmost digit [Math.floor(126 / 10) is 12].
-Example|Expected
+sumDigits1(n)|Expected
 -|-
 `sumDigits1(126)` | &#10132; `9`
 `sumDigits1(49)` | &#10132; `13`
@@ -78,7 +78,7 @@ Example|Expected
 `sumDigits1(235)` | &#10132; `10`
 ## count7
 Given a non-negative int n, return the count of the occurrences of 7 as a digit, so for example 717 yields 2. (no loops). Note that mod (%) by 10 yields the rightmost digit (126 % 10 is 6), while flooring division (Math.floor(n/10)) by 10 removes the rightmost digit [Math.floor(126 / 10) is 12].
-Example|Expected
+count7(n)|Expected
 -|-
 `count7(717)` | &#10132; `2`
 `count7(7)` | &#10132; `1`
@@ -95,7 +95,7 @@ Example|Expected
 `count7(99799)` | &#10132; `1`
 ## count8
 Given a non-negative int n, compute recursively (no loops) the count of the occurrences of 8 as a digit, except that an 8 with another 8 immediately to its left counts double, so 8818 yields 4. Note that mod (%) by 10 yields the rightmost digit (126 % 10 is 6), while flooring division (Math.floor(n/10)) by 10 removes the rightmost digit [Math.floor(126 / 10) is 12].
-Example|Expected
+count8(n)|Expected
 -|-
 `count8(8)` | &#10132; `1`
 `count8(818)` | &#10132; `2`
@@ -117,7 +117,7 @@ Example|Expected
 `count8(78)` | &#10132; `1`
 ## powerN
 Given base and n that are both 1 or more, compute recursively (no loops) the value of base to the n power, so powerN(3, 2) is 9 (3 squared).
-Example|Expected
+powerN(base, n)|Expected
 -|-
 `powerN(3, 1)` | &#10132; `3`
 `powerN(3, 2)` | &#10132; `9`
@@ -132,7 +132,7 @@ Example|Expected
 `powerN(10, 3)` | &#10132; `1000`
 ## countX
 Given a string, compute recursively (no loops) the number of lowercase 'x' chars in the string.
-Example|Expected
+countX(str)|Expected
 -|-
 `countX("xxhixx")` | &#10132; `4`
 `countX("xhixhix")` | &#10132; `3`
@@ -144,7 +144,7 @@ Example|Expected
 `countX("hiAAhi12hi")` | &#10132; `0`
 ## countHi
 Given a string, compute recursively (no loops) the number of times lowercase "hi" appears in the string.
-Example|Expected
+countHi(str)|Expected
 -|-
 `countHi("xxhixx")` | &#10132; `1`
 `countHi("xhixhix")` | &#10132; `2`
@@ -159,7 +159,7 @@ Example|Expected
 `countHi("ship")` | &#10132; `1`
 ## changeXY
 Given a string, compute recursively (no loops) a new string where all the lowercase 'x' chars have been changed to 'y' chars.
-Example|Expected
+changeXY(str)|Expected
 -|-
 `changeXY("codex")` | &#10132; `"codey"`
 `changeXY("xxhixx")` | &#10132; `"yyhiyy"`
@@ -173,7 +173,7 @@ Example|Expected
 `changeXY("hihi")` | &#10132; `"hihi"`
 ## changePi
 Given a string, compute recursively (no loops) a new string where all appearances of "pi" have been replaced by "3.14".
-Example|Expected
+changePi(str)|Expected
 -|-
 `changePi("xpix")` | &#10132; `"x3.14x"`
 `changePi("pipi")` | &#10132; `"3.143.14"`
@@ -187,7 +187,7 @@ Example|Expected
 `changePi("xyzzy")` | &#10132; `"xyzzy"`
 ## noX
 Given a string, compute recursively a new string where all the 'x' chars have been removed.
-Example|Expected
+noX(str)|Expected
 -|-
 `noX("xaxb")` | &#10132; `"ab"`
 `noX("abc")` | &#10132; `"abc"`
@@ -197,7 +197,7 @@ Example|Expected
 `noX("Hellox")` | &#10132; `"Hello"`
 ## array6
 Given an array of ints, compute recursively if the array contains a 6. We'll use the convention of considering only the part of the array that begins at the given index. In this way, a recursive call can pass index+1 to move down the array. The initial call will pass in index as 0.
-Example|Expected
+array6(nums, i)|Expected
 -|-
 `array6([1,6,4], 0)` | &#10132; `true`
 `array6([1,4], 0)` | &#10132; `false`
@@ -209,7 +209,7 @@ Example|Expected
 `array6([2,5,6], 0)` | &#10132; `true`
 ## array11
 Given an array of ints, compute recursively the number of times that the value 11 appears in the array. We'll use the convention of considering only the part of the array that begins at the given index. In this way, a recursive call can pass index+1 to move down the array. The initial call will pass in index as 0.
-Example|Expected
+array11(nums, i)|Expected
 -|-
 `array11([1,2,11], 0)` | &#10132; `1`
 `array11([11,11], 0)` | &#10132; `2`
@@ -222,7 +222,7 @@ Example|Expected
 `array11([11,5,11], 0)` | &#10132; `2`
 ## array220
 Given an array of ints, compute recursively if the array contains somewhere a value followed in the array by that value times 10. We'll use the convention of considering only the part of the array that begins at the given index. In this way, a recursive call can pass index+1 to move down the array. The initial call will pass in index as 0.
-Example|Expected
+array220(nums, i)|Expected
 -|-
 `array220([1,2,20], 0)` | &#10132; `true`
 `array220([3,30], 0)` | &#10132; `true`
@@ -240,7 +240,7 @@ Example|Expected
 `array220([1,2,3,4,4,50,500,6], 0)` | &#10132; `true`
 ## allStar
 Given a string, compute recursively a new string where all the adjacent chars are now separated by a "*".
-Example|Expected
+allStar(str)|Expected
 -|-
 `allStar("hello")` | &#10132; `"h*e*l*l*o"`
 `allStar("abc")` | &#10132; `"a*b*c"`
@@ -252,7 +252,7 @@ Example|Expected
 `allStar("1234")` | &#10132; `"1*2*3*4"`
 ## pairStar
 Given a string, compute recursively a new string where identical chars that are adjacent in the original string are separated from each other by a "*".
-Example|Expected
+pairStar(str)|Expected
 -|-
 `pairStar("hello")` | &#10132; `"hel*lo"`
 `pairStar("xxyy")` | &#10132; `"x*xy*y"`
@@ -266,7 +266,7 @@ Example|Expected
 `pairStar("abbba")` | &#10132; `"ab*b*ba"`
 ## endX
 Given a string, compute recursively a new string where all the lowercase 'x' chars have been moved to the end of the string.
-Example|Expected
+endX(str)|Expected
 -|-
 `endX("xxre")` | &#10132; `"rexx"`
 `endX("xxhixx")` | &#10132; `"hixxxx"`
@@ -282,7 +282,7 @@ Example|Expected
 `endX("xxhxi")` | &#10132; `"hixxx"`
 ## countPairs
 We'll say that a "pair" in a string is two instances of a char separated by a char. So "AxA" the A's make a pair. Pair's can overlap, so "AxAxA" contains 3 pairs -- 2 for A and 1 for x. Recursively compute the number of pairs in the given string.
-Example|Expected
+countPairs(str)|Expected
 -|-
 `countPairs("axa")` | &#10132; `1`
 `countPairs("axax")` | &#10132; `2`
@@ -297,7 +297,7 @@ Example|Expected
 `countPairs("aaa")` | &#10132; `1`
 ## countAbc
 Count recursively the total number of "abc" and "aba" substrings that appear in the given string.
-Example|Expected
+countAbc(str)|Expected
 -|-
 `countAbc("abc")` | &#10132; `1`
 `countAbc("abcxxabc")` | &#10132; `2`
@@ -313,7 +313,7 @@ Example|Expected
 `countAbc("aaa")` | &#10132; `0`
 ## count11
 Given a string, compute recursively (no loops) the number of "11" substrings in the string. The "11" substrings should not overlap.
-Example|Expected
+count11(str)|Expected
 -|-
 `count11("11abc11")` | &#10132; `2`
 `count11("abc11x11x11")` | &#10132; `3`
@@ -328,7 +328,7 @@ Example|Expected
 `count11("Hello")` | &#10132; `0`
 ## stringClean
 Given a string, return recursively a "cleaned" string where adjacent chars that are the same have been reduced to a single char. So "yyzzza" yields "yza".
-Example|Expected
+stringClean(str)|Expected
 -|-
 `stringClean("yyzzza")` | &#10132; `"yza"`
 `stringClean("abbbcdd")` | &#10132; `"abcd"`
@@ -338,7 +338,7 @@ Example|Expected
 `stringClean("Hello Bookkeeper")` | &#10132; `"Helo Bokeper"`
 ## countHi2
 Given a string, compute recursively the number of times lowercase "hi" appears in the string, however do not count "hi" that have an 'x' immedately before them.
-Example|Expected
+countHi2(str)|Expected
 -|-
 `countHi2("ahixhi")` | &#10132; `1`
 `countHi2("ahibhi")` | &#10132; `2`
@@ -358,7 +358,7 @@ Example|Expected
 `countHi2("Hellohi")` | &#10132; `1`
 ## starBit
 This question is modified from parenBit on CodingBat to starBit. Given a string that contains a dash and a star, compute recursively a new string made of only of the dash and star and their contents, so "xyz-abc*123" yields "-abc*".
-Example|Expected
+starBit(str)|Expected
 -|-
 `starBit("xyz,-abc*123")` | &#10132; `"-abc*"`
 `starBit("x,-hello*")` | &#10132; `"-hello*"`
@@ -374,7 +374,7 @@ Example|Expected
 `starBit("ab,-ab*ab")` | &#10132; `"-ab*"`
 ## nestParen
 Given a string, return true if it is a nesting of zero or more pairs of parenthesis, like "(())" or "((()))". Suggestion: check the first and last chars, and then recur on what's inside them.
-Example|Expected
+nestParen(str)|Expected
 -|-
 `nestParen("(())")` | &#10132; `true`
 `nestParen("((()))")` | &#10132; `true`
@@ -393,7 +393,7 @@ Example|Expected
 `nestParen("(((())))")` | &#10132; `true`
 ## strCount
 Given a string and a non-empty substring sub, compute recursively the number of times that sub appears in the string, without the sub strings overlapping.
-Example|Expected
+strCount(str, sub)|Expected
 -|-
 `strCount("catcowcat", "cat")` | &#10132; `2`
 `strCount("catcowcat", "cow")` | &#10132; `1`
@@ -411,7 +411,7 @@ Example|Expected
 `strCount("aaabababab", "b")` | &#10132; `4`
 ## strCopies
 Given a string and a non-empty substring sub, compute recursively if at least n copies of sub appear in the string somewhere, possibly with overlapping. N will be non-negative.
-Example|Expected
+strCopies(str, sub, n)|Expected
 -|-
 `strCopies("catcowcat", "cat", 2)` | &#10132; `true`
 `strCopies("catcowcat", "cow", 2)` | &#10132; `false`
@@ -429,7 +429,7 @@ Example|Expected
 `strCopies("dogcatdogcat", "dog", 2)` | &#10132; `true`
 ## strDist
 Given a string and a non-empty substring sub, compute recursively the largest substring which starts and ends with sub and return its length.
-Example|Expected
+strDist(str, sub)|Expected
 -|-
 `strDist("catcowcat", "cat")` | &#10132; `9`
 `strDist("catcowcat", "cow")` | &#10132; `3`

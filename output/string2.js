@@ -1,64 +1,64 @@
-function doubleChar() {
+function doubleChar(str) {
 }
 
-function countHi() {
+function countHi(str) {
 }
 
-function catDog() {
+function catDog(str) {
 }
 
-function countCode() {
+function countCode(str) {
 }
 
-function endOther() {
+function endOther(a, b) {
 }
 
-function xyzThere() {
+function xyzThere(str) {
 }
 
-function bobThere() {
+function bobThere(str) {
 }
 
-function xyBalance() {
+function xyBalance(str) {
 }
 
-function mixString() {
+function mixString(a, b) {
 }
 
-function repeatEnd() {
+function repeatEnd(str, n) {
 }
 
-function repeatFront() {
+function repeatFront(str, n) {
 }
 
-function repeatSeparator() {
+function repeatSeparator(word, sep, count) {
 }
 
-function prefixAgain() {
+function prefixAgain(str, n) {
 }
 
-function xyzMiddle() {
+function xyzMiddle(str) {
 }
 
-function getSandwich() {
+function getSandwich(str) {
 }
 
-function sameStarChar() {
+function sameStarChar(str) {
 }
 
-function oneTwo() {
+function oneTwo(str) {
 }
 
-function zipZap() {
+function zipZap(str) {
 }
 
-function starOut() {
+function starOut(str) {
 }
 
-function plusOut() {
+function plusOut(str, word) {
 }
 
-function wordEnds() {
+function wordEnds(str, word) {
 }
 
 module.exports = {
