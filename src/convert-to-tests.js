@@ -6,8 +6,8 @@ const array = require('./data/array.js')
 const arraySolutions = require('./data/arraySolutions.js')
 const logic = require('./data/logic.js')
 const logicSolutions = require('./data/logicSolutions.js')
-const map = require('./data/map.js')
-const mapSolutions = require('./data/mapSolutions.js')
+const object = require('./data/object.js')
+const objectSolutions = require('./data/objectSolutions.js')
 const quiz = require('./data/quiz.js')
 const quizSolutions = require('./data/quizSolutions.js')
 const recursion = require('./data/recursion.js')
@@ -22,7 +22,7 @@ function loadSets() {
     [ap, apSolutions],
     [array, arraySolutions],
     [logic, logicSolutions],
-    //[map, mapSolutions],
+    [object, objectSolutions],
     [quiz, quizSolutions],
     [recursion, recursionSolutions],
     [string, stringSolutions],
@@ -120,6 +120,9 @@ function run() {
 
       problem.inputs.forEach(input => {
         let args = eval(input.replace(/^\(/, '[').replace(/\)$/, ']'))
+        if (problem.inputType == 'object') {
+          args = args.map(arg => Object.fromEntries(arg))
+        }
         let solution = solutions[problem.name](...args)
 
         mdFileOut += template_md_table_row(problem.name, args, solution)
