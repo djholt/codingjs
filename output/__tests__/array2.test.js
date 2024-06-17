@@ -112,68 +112,68 @@ test('bigDiff should return 3 when given [7,7,6,8,5,5,6]', () => {
   expect(array2.bigDiff([7,7,6,8,5,5,6])).toEqual(3);
 });
 
-test('centeredAverage should return 3 when given [2,3,4]', () => {
-  expect(array2.centeredAverage([2,3,4])).toEqual(3);
+test('centeredAverage should return 3 when given [1,2,3,4,100]', () => {
+  expect(array2.centeredAverage([1,2,3,4,100])).toEqual(3);
 });
 
-test('centeredAverage should return 5.2 when given [1,5,5,8,7]', () => {
-  expect(array2.centeredAverage([1,5,5,8,7])).toEqual(5.2);
+test('centeredAverage should return 5.2 when given [1,1,5,5,10,8,7]', () => {
+  expect(array2.centeredAverage([1,1,5,5,10,8,7])).toEqual(5.2);
 });
 
-test('centeredAverage should return -3 when given [-4,-2,-4,-2]', () => {
-  expect(array2.centeredAverage([-4,-2,-4,-2])).toEqual(-3);
+test('centeredAverage should return -3 when given [-10,-4,-2,-4,-2,0]', () => {
+  expect(array2.centeredAverage([-10,-4,-2,-4,-2,0])).toEqual(-3);
 });
 
-test('centeredAverage should return 4 when given [5,3,4]', () => {
-  expect(array2.centeredAverage([5,3,4])).toEqual(4);
+test('centeredAverage should return 4 when given [5,3,4,6,2]', () => {
+  expect(array2.centeredAverage([5,3,4,6,2])).toEqual(4);
 });
 
-test('centeredAverage should return 4 when given [5,3,4]', () => {
-  expect(array2.centeredAverage([5,3,4])).toEqual(4);
+test('centeredAverage should return 4 when given [5,3,4,0,100]', () => {
+  expect(array2.centeredAverage([5,3,4,0,100])).toEqual(4);
 });
 
-test('centeredAverage should return 4 when given [5,3,4]', () => {
-  expect(array2.centeredAverage([5,3,4])).toEqual(4);
+test('centeredAverage should return 4 when given [100,0,5,3,4]', () => {
+  expect(array2.centeredAverage([100,0,5,3,4])).toEqual(4);
 });
 
-test('centeredAverage should return 4 when given [4]', () => {
-  expect(array2.centeredAverage([4])).toEqual(4);
+test('centeredAverage should return 4 when given [4,0,100]', () => {
+  expect(array2.centeredAverage([4,0,100])).toEqual(4);
 });
 
-test('centeredAverage should return 3 when given [2,3,4]', () => {
-  expect(array2.centeredAverage([2,3,4])).toEqual(3);
+test('centeredAverage should return 3 when given [0,2,3,4,100]', () => {
+  expect(array2.centeredAverage([0,2,3,4,100])).toEqual(3);
 });
 
-test('centeredAverage should return 1 when given [1]', () => {
-  expect(array2.centeredAverage([1])).toEqual(1);
+test('centeredAverage should return 1 when given [1,1,100]', () => {
+  expect(array2.centeredAverage([1,1,100])).toEqual(1);
 });
 
-test('centeredAverage should return 7 when given [7]', () => {
-  expect(array2.centeredAverage([7])).toEqual(7);
+test('centeredAverage should return 7 when given [7,7,7]', () => {
+  expect(array2.centeredAverage([7,7,7])).toEqual(7);
 });
 
-test('centeredAverage should return 7 when given [7]', () => {
-  expect(array2.centeredAverage([7])).toEqual(7);
+test('centeredAverage should return 7 when given [1,7,8]', () => {
+  expect(array2.centeredAverage([1,7,8])).toEqual(7);
 });
 
-test('centeredAverage should return 50 when given [1,99]', () => {
-  expect(array2.centeredAverage([1,99])).toEqual(50);
+test('centeredAverage should return 50 when given [1,1,99,99]', () => {
+  expect(array2.centeredAverage([1,1,99,99])).toEqual(50);
 });
 
-test('centeredAverage should return 50 when given [1,99]', () => {
-  expect(array2.centeredAverage([1,99])).toEqual(50);
+test('centeredAverage should return 50 when given [1000,0,1,99]', () => {
+  expect(array2.centeredAverage([1000,0,1,99])).toEqual(50);
 });
 
-test('centeredAverage should return 4 when given [4,4,4]', () => {
-  expect(array2.centeredAverage([4,4,4])).toEqual(4);
+test('centeredAverage should return 4 when given [4,4,4,4,5]', () => {
+  expect(array2.centeredAverage([4,4,4,4,5])).toEqual(4);
 });
 
-test('centeredAverage should return 4 when given [4,4,4]', () => {
-  expect(array2.centeredAverage([4,4,4])).toEqual(4);
+test('centeredAverage should return 4 when given [4,4,4,1,5]', () => {
+  expect(array2.centeredAverage([4,4,4,1,5])).toEqual(4);
 });
 
-test('centeredAverage should return 6 when given [6,4,8]', () => {
-  expect(array2.centeredAverage([6,4,8])).toEqual(6);
+test('centeredAverage should return 6 when given [6,4,8,12,3]', () => {
+  expect(array2.centeredAverage([6,4,8,12,3])).toEqual(6);
 });
 
 test('sum13 should return 6 when given [1,2,2,1]', () => {
@@ -496,36 +496,36 @@ test('more14 should return true when given [1,4,1,4,1,6]', () => {
   expect(array2.more14([1,4,1,4,1,6])).toEqual(true);
 });
 
-test('prependSum should return [3,4,4] when given [3,4,4]', () => {
-  expect(array2.prependSum([3,4,4])).toEqual([3,4,4]);
+test('prependSum should return [3,4,4] when given [1,2,4,4]', () => {
+  expect(array2.prependSum([1,2,4,4])).toEqual([3,4,4]);
 });
 
-test('prependSum should return [6,0] when given [6,0]', () => {
-  expect(array2.prependSum([6,0])).toEqual([6,0]);
+test('prependSum should return [6,0] when given [3,3,0]', () => {
+  expect(array2.prependSum([3,3,0])).toEqual([6,0]);
 });
 
-test('prependSum should return [2,1,1,1] when given [2,1,1,1]', () => {
-  expect(array2.prependSum([2,1,1,1])).toEqual([2,1,1,1]);
+test('prependSum should return [2,1,1,1] when given [1,1,1,1,1]', () => {
+  expect(array2.prependSum([1,1,1,1,1])).toEqual([2,1,1,1]);
 });
 
-test('prependSum should return [12] when given [12]', () => {
-  expect(array2.prependSum([12])).toEqual([12]);
+test('prependSum should return [12] when given [5,7]', () => {
+  expect(array2.prependSum([5,7])).toEqual([12]);
 });
 
-test('prependSum should return [0,0,0] when given [0,0,0]', () => {
-  expect(array2.prependSum([0,0,0])).toEqual([0,0,0]);
+test('prependSum should return [0,0,0] when given [0,0,0,0]', () => {
+  expect(array2.prependSum([0,0,0,0])).toEqual([0,0,0]);
 });
 
-test('prependSum should return [25,19,20] when given [25,19,20]', () => {
-  expect(array2.prependSum([25,19,20])).toEqual([25,19,20]);
+test('prependSum should return [25,19,20] when given [12,13,19,20]', () => {
+  expect(array2.prependSum([12,13,19,20])).toEqual([25,19,20]);
 });
 
-test('prependSum should return [0,-2,2] when given [0,-2,2]', () => {
-  expect(array2.prependSum([0,-2,2])).toEqual([0,-2,2]);
+test('prependSum should return [0,-2,2] when given [-2,2,-2,2]', () => {
+  expect(array2.prependSum([-2,2,-2,2])).toEqual([0,-2,2]);
 });
 
-test('prependSum should return [9,3,2,1,0] when given [9,3,2,1,0]', () => {
-  expect(array2.prependSum([9,3,2,1,0])).toEqual([9,3,2,1,0]);
+test('prependSum should return [9,3,2,1,0] when given [5,4,3,2,1,0]', () => {
+  expect(array2.prependSum([5,4,3,2,1,0])).toEqual([9,3,2,1,0]);
 });
 
 test('fizzArray should return [0,1,2,3] when given 4', () => {
@@ -1332,12 +1332,12 @@ test('fizzArray3 should return [1000,1001,1002,1003,1004] when given (1000, 1005
   expect(array2.fizzArray3(1000, 1005)).toEqual([1000,1001,1002,1003,1004]);
 });
 
-test('shiftLeft should return [2,5,3,6] when given [2,5,3,6]', () => {
-  expect(array2.shiftLeft([2,5,3,6])).toEqual([2,5,3,6]);
+test('shiftLeft should return [2,5,3,6] when given [6,2,5,3]', () => {
+  expect(array2.shiftLeft([6,2,5,3])).toEqual([2,5,3,6]);
 });
 
-test('shiftLeft should return [2,1] when given [2,1]', () => {
-  expect(array2.shiftLeft([2,1])).toEqual([2,1]);
+test('shiftLeft should return [2,1] when given [1,2]', () => {
+  expect(array2.shiftLeft([1,2])).toEqual([2,1]);
 });
 
 test('shiftLeft should return [1] when given [1]', () => {
@@ -1348,48 +1348,48 @@ test('shiftLeft should return [] when given []', () => {
   expect(array2.shiftLeft([])).toEqual([]);
 });
 
-test('shiftLeft should return [1,2,2,4,1] when given [1,2,2,4,1]', () => {
-  expect(array2.shiftLeft([1,2,2,4,1])).toEqual([1,2,2,4,1]);
+test('shiftLeft should return [1,2,2,4,1] when given [1,1,2,2,4]', () => {
+  expect(array2.shiftLeft([1,1,2,2,4])).toEqual([1,2,2,4,1]);
 });
 
 test('shiftLeft should return [1,1,1] when given [1,1,1]', () => {
   expect(array2.shiftLeft([1,1,1])).toEqual([1,1,1]);
 });
 
-test('shiftLeft should return [2,3,1] when given [2,3,1]', () => {
-  expect(array2.shiftLeft([2,3,1])).toEqual([2,3,1]);
+test('shiftLeft should return [2,3,1] when given [1,2,3]', () => {
+  expect(array2.shiftLeft([1,2,3])).toEqual([2,3,1]);
 });
 
-test('tenRun should return [2,10,10,10,20,20] when given [2,10,10,10,20,20]', () => {
-  expect(array2.tenRun([2,10,10,10,20,20])).toEqual([2,10,10,10,20,20]);
+test('tenRun should return [2,10,10,10,20,20] when given [2,10,3,4,20,5]', () => {
+  expect(array2.tenRun([2,10,3,4,20,5])).toEqual([2,10,10,10,20,20]);
 });
 
-test('tenRun should return [10,10,20,20] when given [10,10,20,20]', () => {
-  expect(array2.tenRun([10,10,20,20])).toEqual([10,10,20,20]);
+test('tenRun should return [10,10,20,20] when given [10,1,20,2]', () => {
+  expect(array2.tenRun([10,1,20,2])).toEqual([10,10,20,20]);
 });
 
-test('tenRun should return [10,10,10,20] when given [10,10,10,20]', () => {
-  expect(array2.tenRun([10,10,10,20])).toEqual([10,10,10,20]);
+test('tenRun should return [10,10,10,20] when given [10,1,9,20]', () => {
+  expect(array2.tenRun([10,1,9,20])).toEqual([10,10,10,20]);
 });
 
-test('tenRun should return [1,2,50,50] when given [1,2,50,50]', () => {
-  expect(array2.tenRun([1,2,50,50])).toEqual([1,2,50,50]);
+test('tenRun should return [1,2,50,50] when given [1,2,50,1]', () => {
+  expect(array2.tenRun([1,2,50,1])).toEqual([1,2,50,50]);
 });
 
-test('tenRun should return [1,20,50,50] when given [1,20,50,50]', () => {
-  expect(array2.tenRun([1,20,50,50])).toEqual([1,20,50,50]);
-});
-
-test('tenRun should return [10,10] when given [10,10]', () => {
-  expect(array2.tenRun([10,10])).toEqual([10,10]);
+test('tenRun should return [1,20,50,50] when given [1,20,50,1]', () => {
+  expect(array2.tenRun([1,20,50,1])).toEqual([1,20,50,50]);
 });
 
 test('tenRun should return [10,10] when given [10,10]', () => {
   expect(array2.tenRun([10,10])).toEqual([10,10]);
 });
 
-test('tenRun should return [0,0] when given [0,0]', () => {
-  expect(array2.tenRun([0,0])).toEqual([0,0]);
+test('tenRun should return [10,10] when given [10,2]', () => {
+  expect(array2.tenRun([10,2])).toEqual([10,10]);
+});
+
+test('tenRun should return [0,0] when given [0,2]', () => {
+  expect(array2.tenRun([0,2])).toEqual([0,0]);
 });
 
 test('tenRun should return [1,2] when given [1,2]', () => {
@@ -1484,12 +1484,12 @@ test('post4 should return [3,2] when given [3,4,3,2]', () => {
   expect(array2.post4([3,4,3,2])).toEqual([3,2]);
 });
 
-test('notAlone should return [1,3,3] when given ([1,3,3], 2)', () => {
-  expect(array2.notAlone([1,3,3], 2)).toEqual([1,3,3]);
+test('notAlone should return [1,3,3] when given ([1,2,3], 2)', () => {
+  expect(array2.notAlone([1,2,3], 2)).toEqual([1,3,3]);
 });
 
-test('notAlone should return [1,3,3,5,5,2] when given ([1,3,3,5,5,2], 2)', () => {
-  expect(array2.notAlone([1,3,3,5,5,2], 2)).toEqual([1,3,3,5,5,2]);
+test('notAlone should return [1,3,3,5,5,2] when given ([1,2,3,2,5,2], 2)', () => {
+  expect(array2.notAlone([1,2,3,2,5,2], 2)).toEqual([1,3,3,5,5,2]);
 });
 
 test('notAlone should return [3,4] when given ([3,4], 3)', () => {
@@ -1500,8 +1500,8 @@ test('notAlone should return [3,3] when given ([3,3], 3)', () => {
   expect(array2.notAlone([3,3], 3)).toEqual([3,3]);
 });
 
-test('notAlone should return [1,3,3,2] when given ([1,3,3,2], 1)', () => {
-  expect(array2.notAlone([1,3,3,2], 1)).toEqual([1,3,3,2]);
+test('notAlone should return [1,3,3,2] when given ([1,3,1,2], 1)', () => {
+  expect(array2.notAlone([1,3,1,2], 1)).toEqual([1,3,3,2]);
 });
 
 test('notAlone should return [3] when given ([3], 3)', () => {
@@ -1512,8 +1512,8 @@ test('notAlone should return [] when given ([], 3)', () => {
   expect(array2.notAlone([], 3)).toEqual([]);
 });
 
-test('notAlone should return [7,7,6] when given ([7,7,6], 1)', () => {
-  expect(array2.notAlone([7,7,6], 1)).toEqual([7,7,6]);
+test('notAlone should return [7,7,6] when given ([7,1,6], 1)', () => {
+  expect(array2.notAlone([7,1,6], 1)).toEqual([7,7,6]);
 });
 
 test('notAlone should return [1,1,1] when given ([1,1,1], 1)', () => {
@@ -1524,48 +1524,48 @@ test('notAlone should return [1,1,1,2] when given ([1,1,1,2], 1)', () => {
   expect(array2.notAlone([1,1,1,2], 1)).toEqual([1,1,1,2]);
 });
 
-test('zeroFront should return [0,0,1,1] when given [0,0,1,1]', () => {
-  expect(array2.zeroFront([0,0,1,1])).toEqual([0,0,1,1]);
+test('zeroFront should return [0,0,1,1] when given [1,0,0,1]', () => {
+  expect(array2.zeroFront([1,0,0,1])).toEqual([0,0,1,1]);
 });
 
-test('zeroFront should return [0,0,1,1,1] when given [0,0,1,1,1]', () => {
-  expect(array2.zeroFront([0,0,1,1,1])).toEqual([0,0,1,1,1]);
+test('zeroFront should return [0,0,1,1,1] when given [0,1,1,0,1]', () => {
+  expect(array2.zeroFront([0,1,1,0,1])).toEqual([0,0,1,1,1]);
+});
+
+test('zeroFront should return [0,1] when given [1,0]', () => {
+  expect(array2.zeroFront([1,0])).toEqual([0,1]);
 });
 
 test('zeroFront should return [0,1] when given [0,1]', () => {
   expect(array2.zeroFront([0,1])).toEqual([0,1]);
 });
 
-test('zeroFront should return [0,1] when given [0,1]', () => {
-  expect(array2.zeroFront([0,1])).toEqual([0,1]);
-});
-
-test('zeroFront should return [0,1,1,1] when given [0,1,1,1]', () => {
-  expect(array2.zeroFront([0,1,1,1])).toEqual([0,1,1,1]);
+test('zeroFront should return [0,1,1,1] when given [1,1,1,0]', () => {
+  expect(array2.zeroFront([1,1,1,0])).toEqual([0,1,1,1]);
 });
 
 test('zeroFront should return [2,2,2,2] when given [2,2,2,2]', () => {
   expect(array2.zeroFront([2,2,2,2])).toEqual([2,2,2,2]);
 });
 
-test('zeroFront should return [0,0,0,1] when given [0,0,0,1]', () => {
-  expect(array2.zeroFront([0,0,0,1])).toEqual([0,0,0,1]);
+test('zeroFront should return [0,0,0,1] when given [0,0,1,0]', () => {
+  expect(array2.zeroFront([0,0,1,0])).toEqual([0,0,0,1]);
 });
 
-test('zeroFront should return [0,0,0,-1,-1] when given [0,0,0,-1,-1]', () => {
-  expect(array2.zeroFront([0,0,0,-1,-1])).toEqual([0,0,0,-1,-1]);
+test('zeroFront should return [0,0,0,-1,-1] when given [-1,0,0,-1,0]', () => {
+  expect(array2.zeroFront([-1,0,0,-1,0])).toEqual([0,0,0,-1,-1]);
 });
 
-test('zeroFront should return [0,0,-3,-3] when given [0,0,-3,-3]', () => {
-  expect(array2.zeroFront([0,0,-3,-3])).toEqual([0,0,-3,-3]);
+test('zeroFront should return [0,0,-3,-3] when given [0,-3,0,-3]', () => {
+  expect(array2.zeroFront([0,-3,0,-3])).toEqual([0,0,-3,-3]);
 });
 
 test('zeroFront should return [] when given []', () => {
   expect(array2.zeroFront([])).toEqual([]);
 });
 
-test('zeroFront should return [0,0,9,9,9,9] when given [0,0,9,9,9,9]', () => {
-  expect(array2.zeroFront([0,0,9,9,9,9])).toEqual([0,0,9,9,9,9]);
+test('zeroFront should return [0,0,9,9,9,9] when given [9,9,0,9,0,9]', () => {
+  expect(array2.zeroFront([9,9,0,9,0,9])).toEqual([0,0,9,9,9,9]);
 });
 
 test('withoutTen should return [1,2,0,0] when given [1,10,10,2]', () => {
@@ -1608,20 +1608,20 @@ test('withoutTen should return [] when given []', () => {
   expect(array2.withoutTen([])).toEqual([]);
 });
 
-test('zeroMax should return [5,5,3,3] when given [5,5,3,3]', () => {
-  expect(array2.zeroMax([5,5,3,3])).toEqual([5,5,3,3]);
+test('zeroMax should return [5,5,3,3] when given [0,5,0,3]', () => {
+  expect(array2.zeroMax([0,5,0,3])).toEqual([5,5,3,3]);
 });
 
-test('zeroMax should return [3,4,3,3] when given [3,4,3,3]', () => {
-  expect(array2.zeroMax([3,4,3,3])).toEqual([3,4,3,3]);
+test('zeroMax should return [3,4,3,3] when given [0,4,0,3]', () => {
+  expect(array2.zeroMax([0,4,0,3])).toEqual([3,4,3,3]);
 });
 
-test('zeroMax should return [1,1,0] when given [1,1,0]', () => {
-  expect(array2.zeroMax([1,1,0])).toEqual([1,1,0]);
+test('zeroMax should return [1,1,0] when given [0,1,0]', () => {
+  expect(array2.zeroMax([0,1,0])).toEqual([1,1,0]);
 });
 
-test('zeroMax should return [5,1,5] when given [5,1,5]', () => {
-  expect(array2.zeroMax([5,1,5])).toEqual([5,1,5]);
+test('zeroMax should return [5,1,5] when given [0,1,5]', () => {
+  expect(array2.zeroMax([0,1,5])).toEqual([5,1,5]);
 });
 
 test('zeroMax should return [0,2,0] when given [0,2,0]', () => {
@@ -1640,20 +1640,20 @@ test('zeroMax should return [] when given []', () => {
   expect(array2.zeroMax([])).toEqual([]);
 });
 
-test('zeroMax should return [7,3,4,3,0,2] when given [7,3,4,3,0,2]', () => {
-  expect(array2.zeroMax([7,3,4,3,0,2])).toEqual([7,3,4,3,0,2]);
+test('zeroMax should return [7,3,4,3,0,2] when given [7,0,4,3,0,2]', () => {
+  expect(array2.zeroMax([7,0,4,3,0,2])).toEqual([7,3,4,3,0,2]);
 });
 
-test('zeroMax should return [7,3,4,3,1,1] when given [7,3,4,3,1,1]', () => {
-  expect(array2.zeroMax([7,3,4,3,1,1])).toEqual([7,3,4,3,1,1]);
+test('zeroMax should return [7,3,4,3,1,1] when given [7,0,4,3,0,1]', () => {
+  expect(array2.zeroMax([7,0,4,3,0,1])).toEqual([7,3,4,3,1,1]);
 });
 
-test('zeroMax should return [7,3,4,3,0,0] when given [7,3,4,3,0,0]', () => {
-  expect(array2.zeroMax([7,3,4,3,0,0])).toEqual([7,3,4,3,0,0]);
+test('zeroMax should return [7,3,4,3,0,0] when given [7,0,4,3,0,0]', () => {
+  expect(array2.zeroMax([7,0,4,3,0,0])).toEqual([7,3,4,3,0,0]);
 });
 
-test('zeroMax should return [7,7,1,7,7,7] when given [7,7,1,7,7,7]', () => {
-  expect(array2.zeroMax([7,7,1,7,7,7])).toEqual([7,7,1,7,7,7]);
+test('zeroMax should return [7,7,1,7,7,7] when given [7,0,1,0,0,7]', () => {
+  expect(array2.zeroMax([7,0,1,0,0,7])).toEqual([7,7,1,7,7,7]);
 });
 
 test('evenOdd should return [0,0,0,1,1,1,1] when given [1,0,1,0,0,1,1]', () => {

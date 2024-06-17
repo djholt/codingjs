@@ -43,22 +43,22 @@ bigDiff(nums)|Expected
 Return the "centered" average of an array of ints, which we'll say is the mean average of the values, except ignoring the largest and smallest values in the array. If there are multiple copies of the smallest value, ignore just one copy, and likewise for the largest value. Use int division to produce the final average. You may assume that the array is length 3 or more.
 centeredAverage(nums)|Expected
 -|-
-`centeredAverage([2,3,4])` | &#10132; `3`
-`centeredAverage([1,5,5,8,7])` | &#10132; `5.2`
-`centeredAverage([-4,-2,-4,-2])` | &#10132; `-3`
-`centeredAverage([5,3,4])` | &#10132; `4`
-`centeredAverage([5,3,4])` | &#10132; `4`
-`centeredAverage([5,3,4])` | &#10132; `4`
-`centeredAverage([4])` | &#10132; `4`
-`centeredAverage([2,3,4])` | &#10132; `3`
-`centeredAverage([1])` | &#10132; `1`
-`centeredAverage([7])` | &#10132; `7`
-`centeredAverage([7])` | &#10132; `7`
-`centeredAverage([1,99])` | &#10132; `50`
-`centeredAverage([1,99])` | &#10132; `50`
-`centeredAverage([4,4,4])` | &#10132; `4`
-`centeredAverage([4,4,4])` | &#10132; `4`
-`centeredAverage([6,4,8])` | &#10132; `6`
+`centeredAverage([1,2,3,4,100])` | &#10132; `3`
+`centeredAverage([1,1,5,5,10,8,7])` | &#10132; `5.2`
+`centeredAverage([-10,-4,-2,-4,-2,0])` | &#10132; `-3`
+`centeredAverage([5,3,4,6,2])` | &#10132; `4`
+`centeredAverage([5,3,4,0,100])` | &#10132; `4`
+`centeredAverage([100,0,5,3,4])` | &#10132; `4`
+`centeredAverage([4,0,100])` | &#10132; `4`
+`centeredAverage([0,2,3,4,100])` | &#10132; `3`
+`centeredAverage([1,1,100])` | &#10132; `1`
+`centeredAverage([7,7,7])` | &#10132; `7`
+`centeredAverage([1,7,8])` | &#10132; `7`
+`centeredAverage([1,1,99,99])` | &#10132; `50`
+`centeredAverage([1000,0,1,99])` | &#10132; `50`
+`centeredAverage([4,4,4,4,5])` | &#10132; `4`
+`centeredAverage([4,4,4,1,5])` | &#10132; `4`
+`centeredAverage([6,4,8,12,3])` | &#10132; `6`
 ## sum13
 Return the sum of the numbers in the array, returning 0 for an empty array. Except the number 13 is very unlucky, so it does not count and numbers that come immediately after a 13 also do not count.
 sum13(nums)|Expected
@@ -167,14 +167,14 @@ more14(nums)|Expected
 Return a modified version of the input array (nums), where the first two items have been removed and one item – the sum of those two items - is added to the start of the array.
 prependSum(nums)|Expected
 -|-
-`prependSum([3,4,4])` | &#10132; `[3,4,4]`
-`prependSum([6,0])` | &#10132; `[6,0]`
-`prependSum([2,1,1,1])` | &#10132; `[2,1,1,1]`
-`prependSum([12])` | &#10132; `[12]`
-`prependSum([0,0,0])` | &#10132; `[0,0,0]`
-`prependSum([25,19,20])` | &#10132; `[25,19,20]`
-`prependSum([0,-2,2])` | &#10132; `[0,-2,2]`
-`prependSum([9,3,2,1,0])` | &#10132; `[9,3,2,1,0]`
+`prependSum([1,2,4,4])` | &#10132; `[3,4,4]`
+`prependSum([3,3,0])` | &#10132; `[6,0]`
+`prependSum([1,1,1,1,1])` | &#10132; `[2,1,1,1]`
+`prependSum([5,7])` | &#10132; `[12]`
+`prependSum([0,0,0,0])` | &#10132; `[0,0,0]`
+`prependSum([12,13,19,20])` | &#10132; `[25,19,20]`
+`prependSum([-2,2,-2,2])` | &#10132; `[0,-2,2]`
+`prependSum([5,4,3,2,1,0])` | &#10132; `[9,3,2,1,0]`
 ## fizzArray
 Given a number n, create and return a new array of length n, containing the numbers 0, 1, 2, ... n-1. The given n may be 0, in which case just return a length 0 array. You do not need a separate if-statement for the length-0 case; the for-loop should naturally execute 0 times in that case, so it just works. The syntax to make a new array is let myArray = [];
 fizzArray(n)|Expected
@@ -444,25 +444,25 @@ fizzArray3(start, end)|Expected
 Return an array that is "left shifted" by one -- so {6, 2, 5, 3} returns {2, 5, 3, 6}. You may modify and return the given array, or return a new array.
 shiftLeft(nums)|Expected
 -|-
-`shiftLeft([2,5,3,6])` | &#10132; `[2,5,3,6]`
-`shiftLeft([2,1])` | &#10132; `[2,1]`
+`shiftLeft([6,2,5,3])` | &#10132; `[2,5,3,6]`
+`shiftLeft([1,2])` | &#10132; `[2,1]`
 `shiftLeft([1])` | &#10132; `[1]`
 `shiftLeft([])` | &#10132; `[]`
-`shiftLeft([1,2,2,4,1])` | &#10132; `[1,2,2,4,1]`
+`shiftLeft([1,1,2,2,4])` | &#10132; `[1,2,2,4,1]`
 `shiftLeft([1,1,1])` | &#10132; `[1,1,1]`
-`shiftLeft([2,3,1])` | &#10132; `[2,3,1]`
+`shiftLeft([1,2,3])` | &#10132; `[2,3,1]`
 ## tenRun
 For each multiple of 10 in the given array, change all the values following it to be that multiple of 10, until encountering another multiple of 10. So {2, 10, 3, 4, 20, 5} yields {2, 10, 10, 10, 20, 20}.
 tenRun(nums)|Expected
 -|-
-`tenRun([2,10,10,10,20,20])` | &#10132; `[2,10,10,10,20,20]`
-`tenRun([10,10,20,20])` | &#10132; `[10,10,20,20]`
-`tenRun([10,10,10,20])` | &#10132; `[10,10,10,20]`
-`tenRun([1,2,50,50])` | &#10132; `[1,2,50,50]`
-`tenRun([1,20,50,50])` | &#10132; `[1,20,50,50]`
+`tenRun([2,10,3,4,20,5])` | &#10132; `[2,10,10,10,20,20]`
+`tenRun([10,1,20,2])` | &#10132; `[10,10,20,20]`
+`tenRun([10,1,9,20])` | &#10132; `[10,10,10,20]`
+`tenRun([1,2,50,1])` | &#10132; `[1,2,50,50]`
+`tenRun([1,20,50,1])` | &#10132; `[1,20,50,50]`
 `tenRun([10,10])` | &#10132; `[10,10]`
-`tenRun([10,10])` | &#10132; `[10,10]`
-`tenRun([0,0])` | &#10132; `[0,0]`
+`tenRun([10,2])` | &#10132; `[10,10]`
+`tenRun([0,2])` | &#10132; `[0,0]`
 `tenRun([1,2])` | &#10132; `[1,2]`
 `tenRun([1])` | &#10132; `[1]`
 `tenRun([])` | &#10132; `[]`
@@ -498,31 +498,31 @@ post4(nums)|Expected
 We'll say that an element in an array is "alone" if there are values before and after it, and those values are different from it. Return a version of the given array where every instance of the given value which is alone is replaced by whichever value to its left or right is larger.
 notAlone(nums, val)|Expected
 -|-
-`notAlone([1,3,3], 2)` | &#10132; `[1,3,3]`
-`notAlone([1,3,3,5,5,2], 2)` | &#10132; `[1,3,3,5,5,2]`
+`notAlone([1,2,3], 2)` | &#10132; `[1,3,3]`
+`notAlone([1,2,3,2,5,2], 2)` | &#10132; `[1,3,3,5,5,2]`
 `notAlone([3,4], 3)` | &#10132; `[3,4]`
 `notAlone([3,3], 3)` | &#10132; `[3,3]`
-`notAlone([1,3,3,2], 1)` | &#10132; `[1,3,3,2]`
+`notAlone([1,3,1,2], 1)` | &#10132; `[1,3,3,2]`
 `notAlone([3], 3)` | &#10132; `[3]`
 `notAlone([], 3)` | &#10132; `[]`
-`notAlone([7,7,6], 1)` | &#10132; `[7,7,6]`
+`notAlone([7,1,6], 1)` | &#10132; `[7,7,6]`
 `notAlone([1,1,1], 1)` | &#10132; `[1,1,1]`
 `notAlone([1,1,1,2], 1)` | &#10132; `[1,1,1,2]`
 ## zeroFront
 Return an array that contains the exact same numbers as the given array, but rearranged so that all the zeros are grouped at the start of the array. The order of the non-zero numbers does not matter. So {1, 0, 0, 1} becomes {0 ,0, 1, 1}. You may modify and return the given array or make a new array.
 zeroFront(nums)|Expected
 -|-
-`zeroFront([0,0,1,1])` | &#10132; `[0,0,1,1]`
-`zeroFront([0,0,1,1,1])` | &#10132; `[0,0,1,1,1]`
+`zeroFront([1,0,0,1])` | &#10132; `[0,0,1,1]`
+`zeroFront([0,1,1,0,1])` | &#10132; `[0,0,1,1,1]`
+`zeroFront([1,0])` | &#10132; `[0,1]`
 `zeroFront([0,1])` | &#10132; `[0,1]`
-`zeroFront([0,1])` | &#10132; `[0,1]`
-`zeroFront([0,1,1,1])` | &#10132; `[0,1,1,1]`
+`zeroFront([1,1,1,0])` | &#10132; `[0,1,1,1]`
 `zeroFront([2,2,2,2])` | &#10132; `[2,2,2,2]`
-`zeroFront([0,0,0,1])` | &#10132; `[0,0,0,1]`
-`zeroFront([0,0,0,-1,-1])` | &#10132; `[0,0,0,-1,-1]`
-`zeroFront([0,0,-3,-3])` | &#10132; `[0,0,-3,-3]`
+`zeroFront([0,0,1,0])` | &#10132; `[0,0,0,1]`
+`zeroFront([-1,0,0,-1,0])` | &#10132; `[0,0,0,-1,-1]`
+`zeroFront([0,-3,0,-3])` | &#10132; `[0,0,-3,-3]`
 `zeroFront([])` | &#10132; `[]`
-`zeroFront([0,0,9,9,9,9])` | &#10132; `[0,0,9,9,9,9]`
+`zeroFront([9,9,0,9,0,9])` | &#10132; `[0,0,9,9,9,9]`
 ## withoutTen
 Return a version of the given array where all the 10's have been removed. The remaining elements should shift left towards the start of the array as needed, and the empty spaces a the end of the array should be 0. So {1, 10, 10, 2} yields {1, 2, 0, 0}. You may modify and return the given array or make a new array.
 withoutTen(nums)|Expected
@@ -541,18 +541,18 @@ withoutTen(nums)|Expected
 Return a version of the given array where each zero value in the array is replaced by the largest odd value to the right of the zero in the array. If there is no odd value to the right of the zero, leave the zero as a zero.
 zeroMax(nums)|Expected
 -|-
-`zeroMax([5,5,3,3])` | &#10132; `[5,5,3,3]`
-`zeroMax([3,4,3,3])` | &#10132; `[3,4,3,3]`
-`zeroMax([1,1,0])` | &#10132; `[1,1,0]`
-`zeroMax([5,1,5])` | &#10132; `[5,1,5]`
+`zeroMax([0,5,0,3])` | &#10132; `[5,5,3,3]`
+`zeroMax([0,4,0,3])` | &#10132; `[3,4,3,3]`
+`zeroMax([0,1,0])` | &#10132; `[1,1,0]`
+`zeroMax([0,1,5])` | &#10132; `[5,1,5]`
 `zeroMax([0,2,0])` | &#10132; `[0,2,0]`
 `zeroMax([1])` | &#10132; `[1]`
 `zeroMax([0])` | &#10132; `[0]`
 `zeroMax([])` | &#10132; `[]`
-`zeroMax([7,3,4,3,0,2])` | &#10132; `[7,3,4,3,0,2]`
-`zeroMax([7,3,4,3,1,1])` | &#10132; `[7,3,4,3,1,1]`
-`zeroMax([7,3,4,3,0,0])` | &#10132; `[7,3,4,3,0,0]`
-`zeroMax([7,7,1,7,7,7])` | &#10132; `[7,7,1,7,7,7]`
+`zeroMax([7,0,4,3,0,2])` | &#10132; `[7,3,4,3,0,2]`
+`zeroMax([7,0,4,3,0,1])` | &#10132; `[7,3,4,3,1,1]`
+`zeroMax([7,0,4,3,0,0])` | &#10132; `[7,3,4,3,0,0]`
+`zeroMax([7,0,1,0,0,7])` | &#10132; `[7,7,1,7,7,7]`
 ## evenOdd
 Return an array that contains the exact same numbers as the given array, but rearranged so that all the even numbers come before all the odd numbers. Other than that, the numbers can be in any order. You may modify and return the given array, or make a new array.
 evenOdd(nums)|Expected

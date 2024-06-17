@@ -66,26 +66,26 @@ rotateLeft3(nums)|Expected
 Given an array of ints length 3, return a new array with the elements in reverse order, so {1, 2, 3} becomes {3, 2, 1}.
 reverse3(nums)|Expected
 -|-
-`reverse3([3,2,1])` | &#10132; `[3,2,1]`
-`reverse3([9,11,5])` | &#10132; `[9,11,5]`
-`reverse3([0,0,7])` | &#10132; `[0,0,7]`
+`reverse3([1,2,3])` | &#10132; `[3,2,1]`
+`reverse3([5,11,9])` | &#10132; `[9,11,5]`
+`reverse3([7,0,0])` | &#10132; `[0,0,7]`
 `reverse3([2,1,2])` | &#10132; `[2,1,2]`
 `reverse3([1,2,1])` | &#10132; `[1,2,1]`
-`reverse3([3,11,2])` | &#10132; `[3,11,2]`
-`reverse3([5,6,0])` | &#10132; `[5,6,0]`
-`reverse3([3,2,7])` | &#10132; `[3,2,7]`
+`reverse3([2,11,3])` | &#10132; `[3,11,2]`
+`reverse3([0,6,5])` | &#10132; `[5,6,0]`
+`reverse3([7,2,3])` | &#10132; `[3,2,7]`
 ## maxEnd3
 Given an array of ints length 3, figure out which is larger, the first or last element in the array, and set all the other elements to be that value. Return the changed array.
 maxEnd3(nums)|Expected
 -|-
-`maxEnd3([3,3,3])` | &#10132; `[3,3,3]`
-`maxEnd3([11,11,11])` | &#10132; `[11,11,11]`
-`maxEnd3([3,3,3])` | &#10132; `[3,3,3]`
-`maxEnd3([11,11,11])` | &#10132; `[11,11,11]`
-`maxEnd3([11,11,11])` | &#10132; `[11,11,11]`
+`maxEnd3([1,2,3])` | &#10132; `[3,3,3]`
+`maxEnd3([11,5,9])` | &#10132; `[11,11,11]`
+`maxEnd3([2,11,3])` | &#10132; `[3,3,3]`
+`maxEnd3([11,3,3])` | &#10132; `[11,11,11]`
+`maxEnd3([3,11,11])` | &#10132; `[11,11,11]`
 `maxEnd3([2,2,2])` | &#10132; `[2,2,2]`
-`maxEnd3([2,2,2])` | &#10132; `[2,2,2]`
-`maxEnd3([1,1,1])` | &#10132; `[1,1,1]`
+`maxEnd3([2,11,2])` | &#10132; `[2,2,2]`
+`maxEnd3([0,0,1])` | &#10132; `[1,1,1]`
 ## sum2
 Given an array of ints, return the sum of the first 2 elements in the array. If the array length is less than 2, just sum up the elements that exist, returning 0 if the array is length 0.
 sum2(nums)|Expected
@@ -178,12 +178,12 @@ double23(nums)|Expected
 Given an int array length 3, if there is a 2 in the array immediately followed by a 3, set the 3 element to 0. Return the changed array.
 fix23(nums)|Expected
 -|-
-`fix23([1,2,0])` | &#10132; `[1,2,0]`
-`fix23([2,0,5])` | &#10132; `[2,0,5]`
+`fix23([1,2,3])` | &#10132; `[1,2,0]`
+`fix23([2,3,5])` | &#10132; `[2,0,5]`
 `fix23([1,2,1])` | &#10132; `[1,2,1]`
 `fix23([3,2,1])` | &#10132; `[3,2,1]`
-`fix23([2,2,0])` | &#10132; `[2,2,0]`
-`fix23([2,0,3])` | &#10132; `[2,0,3]`
+`fix23([2,2,3])` | &#10132; `[2,2,0]`
+`fix23([2,3,3])` | &#10132; `[2,0,3]`
 ## start1
 Start with 2 int arrays, a and b, of any length. Return how many of the arrays have 1 as their first element.
 start1(a, b)|Expected
@@ -213,11 +213,11 @@ biggerTwo(a, b)|Expected
 Given an array of ints of even length, return a new array length 2 containing the middle two elements from the original array. The original array will be length 2 or more.
 makeMiddle(nums)|Expected
 -|-
-`makeMiddle([4])` | &#10132; `[2,3]`
-`makeMiddle([4,9])` | &#10132; `[2,3]`
-`makeMiddle([])` | &#10132; `[1,2]`
-`makeMiddle([7])` | &#10132; `[2,4]`
-`makeMiddle([9,1])` | &#10132; `[4,3]`
+`makeMiddle([1,2,3,4])` | &#10132; `[2,3]`
+`makeMiddle([7,1,2,3,4,9])` | &#10132; `[2,3]`
+`makeMiddle([1,2])` | &#10132; `[1,2]`
+`makeMiddle([5,2,4,7])` | &#10132; `[2,4]`
+`makeMiddle([9,0,4,3,9,1])` | &#10132; `[4,3]`
 ## plusTwo
 Given 2 int arrays, each length 2, return a new array length 4 containing all their elements.
 plusTwo(a, b)|Expected
@@ -229,11 +229,11 @@ plusTwo(a, b)|Expected
 Given an array of ints, swap the first and last elements in the array. Return the modified array. The array length will be at least 1.
 swapEnds(nums)|Expected
 -|-
-`swapEnds([4,2,3,1])` | &#10132; `[4,2,3,1]`
-`swapEnds([3,2,1])` | &#10132; `[3,2,1]`
-`swapEnds([5,6,7,9,8])` | &#10132; `[5,6,7,9,8]`
-`swapEnds([9,1,4,1,5,3])` | &#10132; `[9,1,4,1,5,3]`
-`swapEnds([2,1])` | &#10132; `[2,1]`
+`swapEnds([1,2,3,4])` | &#10132; `[4,2,3,1]`
+`swapEnds([1,2,3])` | &#10132; `[3,2,1]`
+`swapEnds([8,6,7,9,5])` | &#10132; `[5,6,7,9,8]`
+`swapEnds([3,1,4,1,5,9])` | &#10132; `[9,1,4,1,5,3]`
+`swapEnds([1,2])` | &#10132; `[2,1]`
 `swapEnds([1])` | &#10132; `[1]`
 ## midThree
 Given an array of ints of odd length, return a new array length 3 containing the elements from the middle of the array. The array length will be at least 3.

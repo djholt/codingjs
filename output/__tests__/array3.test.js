@@ -40,32 +40,32 @@ test('maxSpan should return 1 when given [1]', () => {
   expect(array3.maxSpan([1])).toEqual(1);
 });
 
-test('fix34 should return [1,3,4,1] when given [1,3,4,1]', () => {
-  expect(array3.fix34([1,3,4,1])).toEqual([1,3,4,1]);
+test('fix34 should return [1,3,4,1] when given [1,3,1,4]', () => {
+  expect(array3.fix34([1,3,1,4])).toEqual([1,3,4,1]);
 });
 
-test('fix34 should return [1,3,4,1,1,3,4] when given [1,3,4,1,1,3,4]', () => {
-  expect(array3.fix34([1,3,4,1,1,3,4])).toEqual([1,3,4,1,1,3,4]);
+test('fix34 should return [1,3,4,1,1,3,4] when given [1,3,1,4,4,3,1]', () => {
+  expect(array3.fix34([1,3,1,4,4,3,1])).toEqual([1,3,4,1,1,3,4]);
 });
 
-test('fix34 should return [3,4,2,2] when given [3,4,2,2]', () => {
-  expect(array3.fix34([3,4,2,2])).toEqual([3,4,2,2]);
+test('fix34 should return [3,4,2,2] when given [3,2,2,4]', () => {
+  expect(array3.fix34([3,2,2,4])).toEqual([3,4,2,2]);
 });
 
-test('fix34 should return [3,4,3,4,2,2] when given [3,4,3,4,2,2]', () => {
-  expect(array3.fix34([3,4,3,4,2,2])).toEqual([3,4,3,4,2,2]);
+test('fix34 should return [3,4,3,4,2,2] when given [3,2,3,2,4,4]', () => {
+  expect(array3.fix34([3,2,3,2,4,4])).toEqual([3,4,3,4,2,2]);
 });
 
-test('fix34 should return [2,3,4,3,4,2,2] when given [2,3,4,3,4,2,2]', () => {
-  expect(array3.fix34([2,3,4,3,4,2,2])).toEqual([2,3,4,3,4,2,2]);
+test('fix34 should return [2,3,4,3,4,2,2] when given [2,3,2,3,2,4,4]', () => {
+  expect(array3.fix34([2,3,2,3,2,4,4])).toEqual([2,3,4,3,4,2,2]);
 });
 
-test('fix34 should return [5,3,4,5,5,5,5,5,3,4,3,4] when given [5,3,4,5,5,5,5,5,3,4,3,4]', () => {
-  expect(array3.fix34([5,3,4,5,5,5,5,5,3,4,3,4])).toEqual([5,3,4,5,5,5,5,5,3,4,3,4]);
+test('fix34 should return [5,3,4,5,5,5,5,5,3,4,3,4] when given [5,3,5,4,5,4,5,4,3,5,3,5]', () => {
+  expect(array3.fix34([5,3,5,4,5,4,5,4,3,5,3,5])).toEqual([5,3,4,5,5,5,5,5,3,4,3,4]);
 });
 
-test('fix34 should return [3,4,1] when given [3,4,1]', () => {
-  expect(array3.fix34([3,4,1])).toEqual([3,4,1]);
+test('fix34 should return [3,4,1] when given [3,1,4]', () => {
+  expect(array3.fix34([3,1,4])).toEqual([3,4,1]);
 });
 
 test('fix34 should return [3,4,1] when given [3,4,1]', () => {
@@ -84,48 +84,48 @@ test('fix34 should return [] when given []', () => {
   expect(array3.fix34([])).toEqual([]);
 });
 
-test('fix34 should return [7,3,4,7,7] when given [7,3,4,7,7]', () => {
-  expect(array3.fix34([7,3,4,7,7])).toEqual([7,3,4,7,7]);
+test('fix34 should return [7,3,4,7,7] when given [7,3,7,7,4]', () => {
+  expect(array3.fix34([7,3,7,7,4])).toEqual([7,3,4,7,7]);
 });
 
-test('fix34 should return [3,4,1,3,4,1] when given [3,4,1,3,4,1]', () => {
-  expect(array3.fix34([3,4,1,3,4,1])).toEqual([3,4,1,3,4,1]);
+test('fix34 should return [3,4,1,3,4,1] when given [3,1,4,3,1,4]', () => {
+  expect(array3.fix34([3,1,4,3,1,4])).toEqual([3,4,1,3,4,1]);
 });
 
-test('fix34 should return [3,4,1,3,4,1] when given [3,4,1,3,4,1]', () => {
-  expect(array3.fix34([3,4,1,3,4,1])).toEqual([3,4,1,3,4,1]);
+test('fix34 should return [3,4,1,3,4,1] when given [3,1,1,3,4,4]', () => {
+  expect(array3.fix34([3,1,1,3,4,4])).toEqual([3,4,1,3,4,1]);
 });
 
-test('fix45 should return [9,4,5,4,5,9] when given [9,4,5,4,5,9]', () => {
-  expect(array3.fix45([9,4,5,4,5,9])).toEqual([9,4,5,4,5,9]);
+test('fix45 should return [9,4,5,4,5,9] when given [5,4,9,4,9,5]', () => {
+  expect(array3.fix45([5,4,9,4,9,5])).toEqual([9,4,5,4,5,9]);
 });
 
-test('fix45 should return [1,4,5,1] when given [1,4,5,1]', () => {
-  expect(array3.fix45([1,4,5,1])).toEqual([1,4,5,1]);
+test('fix45 should return [1,4,5,1] when given [1,4,1,5]', () => {
+  expect(array3.fix45([1,4,1,5])).toEqual([1,4,5,1]);
 });
 
-test('fix45 should return [1,4,5,1,1,4,5] when given [1,4,5,1,1,4,5]', () => {
-  expect(array3.fix45([1,4,5,1,1,4,5])).toEqual([1,4,5,1,1,4,5]);
+test('fix45 should return [1,4,5,1,1,4,5] when given [1,4,1,5,5,4,1]', () => {
+  expect(array3.fix45([1,4,1,5,5,4,1])).toEqual([1,4,5,1,1,4,5]);
 });
 
-test('fix45 should return [4,5,4,5,9,9,4,5,9] when given [4,5,4,5,9,9,4,5,9]', () => {
-  expect(array3.fix45([4,5,4,5,9,9,4,5,9])).toEqual([4,5,4,5,9,9,4,5,9]);
+test('fix45 should return [4,5,4,5,9,9,4,5,9] when given [4,9,4,9,5,5,4,9,5]', () => {
+  expect(array3.fix45([4,9,4,9,5,5,4,9,5])).toEqual([4,5,4,5,9,9,4,5,9]);
 });
 
-test('fix45 should return [1,1,4,5,4,5] when given [1,1,4,5,4,5]', () => {
-  expect(array3.fix45([1,1,4,5,4,5])).toEqual([1,1,4,5,4,5]);
+test('fix45 should return [1,1,4,5,4,5] when given [5,5,4,1,4,1]', () => {
+  expect(array3.fix45([5,5,4,1,4,1])).toEqual([1,1,4,5,4,5]);
 });
 
-test('fix45 should return [4,5,2,2] when given [4,5,2,2]', () => {
-  expect(array3.fix45([4,5,2,2])).toEqual([4,5,2,2]);
+test('fix45 should return [4,5,2,2] when given [4,2,2,5]', () => {
+  expect(array3.fix45([4,2,2,5])).toEqual([4,5,2,2]);
 });
 
-test('fix45 should return [4,5,4,5,2,2] when given [4,5,4,5,2,2]', () => {
-  expect(array3.fix45([4,5,4,5,2,2])).toEqual([4,5,4,5,2,2]);
+test('fix45 should return [4,5,4,5,2,2] when given [4,2,4,2,5,5]', () => {
+  expect(array3.fix45([4,2,4,2,5,5])).toEqual([4,5,4,5,2,2]);
 });
 
-test('fix45 should return [4,5,4,5,2] when given [4,5,4,5,2]', () => {
-  expect(array3.fix45([4,5,4,5,2])).toEqual([4,5,4,5,2]);
+test('fix45 should return [4,5,4,5,2] when given [4,2,4,5,5]', () => {
+  expect(array3.fix45([4,2,4,5,5])).toEqual([4,5,4,5,2]);
 });
 
 test('fix45 should return [1,1,1] when given [1,1,1]', () => {
@@ -136,36 +136,36 @@ test('fix45 should return [4,5] when given [4,5]', () => {
   expect(array3.fix45([4,5])).toEqual([4,5]);
 });
 
-test('fix45 should return [1,4,5] when given [1,4,5]', () => {
-  expect(array3.fix45([1,4,5])).toEqual([1,4,5]);
+test('fix45 should return [1,4,5] when given [5,4,1]', () => {
+  expect(array3.fix45([5,4,1])).toEqual([1,4,5]);
 });
 
 test('fix45 should return [] when given []', () => {
   expect(array3.fix45([])).toEqual([]);
 });
 
-test('fix45 should return [1,4,5,4,5] when given [1,4,5,4,5]', () => {
-  expect(array3.fix45([1,4,5,4,5])).toEqual([1,4,5,4,5]);
+test('fix45 should return [1,4,5,4,5] when given [5,4,5,4,1]', () => {
+  expect(array3.fix45([5,4,5,4,1])).toEqual([1,4,5,4,5]);
 });
 
-test('fix45 should return [4,5,4,5,1] when given [4,5,4,5,1]', () => {
-  expect(array3.fix45([4,5,4,5,1])).toEqual([4,5,4,5,1]);
+test('fix45 should return [4,5,4,5,1] when given [4,5,4,1,5]', () => {
+  expect(array3.fix45([4,5,4,1,5])).toEqual([4,5,4,5,1]);
 });
 
 test('fix45 should return [3,4,5] when given [3,4,5]', () => {
   expect(array3.fix45([3,4,5])).toEqual([3,4,5]);
 });
 
-test('fix45 should return [4,5,1] when given [4,5,1]', () => {
-  expect(array3.fix45([4,5,1])).toEqual([4,5,1]);
+test('fix45 should return [4,5,1] when given [4,1,5]', () => {
+  expect(array3.fix45([4,1,5])).toEqual([4,5,1]);
 });
 
-test('fix45 should return [1,4,5] when given [1,4,5]', () => {
-  expect(array3.fix45([1,4,5])).toEqual([1,4,5]);
+test('fix45 should return [1,4,5] when given [5,4,1]', () => {
+  expect(array3.fix45([5,4,1])).toEqual([1,4,5]);
 });
 
-test('fix45 should return [2,4,5,2] when given [2,4,5,2]', () => {
-  expect(array3.fix45([2,4,5,2])).toEqual([2,4,5,2]);
+test('fix45 should return [2,4,5,2] when given [2,4,2,5]', () => {
+  expect(array3.fix45([2,4,2,5])).toEqual([2,4,5,2]);
 });
 
 test('canBalance should return true when given [1,1,1,2,1]', () => {

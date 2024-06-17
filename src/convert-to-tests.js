@@ -123,7 +123,7 @@ function run() {
         if (problem.inputType == 'object') {
           args = args.map(arg => Object.fromEntries(arg))
         }
-        let solution = solutions[problem.name](...args)
+        let solution = solutions[problem.name](...structuredClone(args))
 
         mdFileOut += template_md_table_row(problem.name, args, solution)
         testFileOut += '\n' + template_test(setKey, problem.name, args, solution)

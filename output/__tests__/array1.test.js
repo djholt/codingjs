@@ -156,16 +156,16 @@ test('rotateLeft3 should return [0,1,0] when given [0,0,1]', () => {
   expect(array1.rotateLeft3([0,0,1])).toEqual([0,1,0]);
 });
 
-test('reverse3 should return [3,2,1] when given [3,2,1]', () => {
-  expect(array1.reverse3([3,2,1])).toEqual([3,2,1]);
+test('reverse3 should return [3,2,1] when given [1,2,3]', () => {
+  expect(array1.reverse3([1,2,3])).toEqual([3,2,1]);
 });
 
-test('reverse3 should return [9,11,5] when given [9,11,5]', () => {
-  expect(array1.reverse3([9,11,5])).toEqual([9,11,5]);
+test('reverse3 should return [9,11,5] when given [5,11,9]', () => {
+  expect(array1.reverse3([5,11,9])).toEqual([9,11,5]);
 });
 
-test('reverse3 should return [0,0,7] when given [0,0,7]', () => {
-  expect(array1.reverse3([0,0,7])).toEqual([0,0,7]);
+test('reverse3 should return [0,0,7] when given [7,0,0]', () => {
+  expect(array1.reverse3([7,0,0])).toEqual([0,0,7]);
 });
 
 test('reverse3 should return [2,1,2] when given [2,1,2]', () => {
@@ -176,48 +176,48 @@ test('reverse3 should return [1,2,1] when given [1,2,1]', () => {
   expect(array1.reverse3([1,2,1])).toEqual([1,2,1]);
 });
 
-test('reverse3 should return [3,11,2] when given [3,11,2]', () => {
-  expect(array1.reverse3([3,11,2])).toEqual([3,11,2]);
+test('reverse3 should return [3,11,2] when given [2,11,3]', () => {
+  expect(array1.reverse3([2,11,3])).toEqual([3,11,2]);
 });
 
-test('reverse3 should return [5,6,0] when given [5,6,0]', () => {
-  expect(array1.reverse3([5,6,0])).toEqual([5,6,0]);
+test('reverse3 should return [5,6,0] when given [0,6,5]', () => {
+  expect(array1.reverse3([0,6,5])).toEqual([5,6,0]);
 });
 
-test('reverse3 should return [3,2,7] when given [3,2,7]', () => {
-  expect(array1.reverse3([3,2,7])).toEqual([3,2,7]);
+test('reverse3 should return [3,2,7] when given [7,2,3]', () => {
+  expect(array1.reverse3([7,2,3])).toEqual([3,2,7]);
 });
 
-test('maxEnd3 should return [3,3,3] when given [3,3,3]', () => {
-  expect(array1.maxEnd3([3,3,3])).toEqual([3,3,3]);
+test('maxEnd3 should return [3,3,3] when given [1,2,3]', () => {
+  expect(array1.maxEnd3([1,2,3])).toEqual([3,3,3]);
 });
 
-test('maxEnd3 should return [11,11,11] when given [11,11,11]', () => {
-  expect(array1.maxEnd3([11,11,11])).toEqual([11,11,11]);
+test('maxEnd3 should return [11,11,11] when given [11,5,9]', () => {
+  expect(array1.maxEnd3([11,5,9])).toEqual([11,11,11]);
 });
 
-test('maxEnd3 should return [3,3,3] when given [3,3,3]', () => {
-  expect(array1.maxEnd3([3,3,3])).toEqual([3,3,3]);
+test('maxEnd3 should return [3,3,3] when given [2,11,3]', () => {
+  expect(array1.maxEnd3([2,11,3])).toEqual([3,3,3]);
 });
 
-test('maxEnd3 should return [11,11,11] when given [11,11,11]', () => {
-  expect(array1.maxEnd3([11,11,11])).toEqual([11,11,11]);
+test('maxEnd3 should return [11,11,11] when given [11,3,3]', () => {
+  expect(array1.maxEnd3([11,3,3])).toEqual([11,11,11]);
 });
 
-test('maxEnd3 should return [11,11,11] when given [11,11,11]', () => {
-  expect(array1.maxEnd3([11,11,11])).toEqual([11,11,11]);
-});
-
-test('maxEnd3 should return [2,2,2] when given [2,2,2]', () => {
-  expect(array1.maxEnd3([2,2,2])).toEqual([2,2,2]);
+test('maxEnd3 should return [11,11,11] when given [3,11,11]', () => {
+  expect(array1.maxEnd3([3,11,11])).toEqual([11,11,11]);
 });
 
 test('maxEnd3 should return [2,2,2] when given [2,2,2]', () => {
   expect(array1.maxEnd3([2,2,2])).toEqual([2,2,2]);
 });
 
-test('maxEnd3 should return [1,1,1] when given [1,1,1]', () => {
-  expect(array1.maxEnd3([1,1,1])).toEqual([1,1,1]);
+test('maxEnd3 should return [2,2,2] when given [2,11,2]', () => {
+  expect(array1.maxEnd3([2,11,2])).toEqual([2,2,2]);
+});
+
+test('maxEnd3 should return [1,1,1] when given [0,0,1]', () => {
+  expect(array1.maxEnd3([0,0,1])).toEqual([1,1,1]);
 });
 
 test('sum2 should return 3 when given [1,2,3]', () => {
@@ -460,12 +460,12 @@ test('double23 should return false when given [3,4]', () => {
   expect(array1.double23([3,4])).toEqual(false);
 });
 
-test('fix23 should return [1,2,0] when given [1,2,0]', () => {
-  expect(array1.fix23([1,2,0])).toEqual([1,2,0]);
+test('fix23 should return [1,2,0] when given [1,2,3]', () => {
+  expect(array1.fix23([1,2,3])).toEqual([1,2,0]);
 });
 
-test('fix23 should return [2,0,5] when given [2,0,5]', () => {
-  expect(array1.fix23([2,0,5])).toEqual([2,0,5]);
+test('fix23 should return [2,0,5] when given [2,3,5]', () => {
+  expect(array1.fix23([2,3,5])).toEqual([2,0,5]);
 });
 
 test('fix23 should return [1,2,1] when given [1,2,1]', () => {
@@ -476,12 +476,12 @@ test('fix23 should return [3,2,1] when given [3,2,1]', () => {
   expect(array1.fix23([3,2,1])).toEqual([3,2,1]);
 });
 
-test('fix23 should return [2,2,0] when given [2,2,0]', () => {
-  expect(array1.fix23([2,2,0])).toEqual([2,2,0]);
+test('fix23 should return [2,2,0] when given [2,2,3]', () => {
+  expect(array1.fix23([2,2,3])).toEqual([2,2,0]);
 });
 
-test('fix23 should return [2,0,3] when given [2,0,3]', () => {
-  expect(array1.fix23([2,0,3])).toEqual([2,0,3]);
+test('fix23 should return [2,0,3] when given [2,3,3]', () => {
+  expect(array1.fix23([2,3,3])).toEqual([2,0,3]);
 });
 
 test('start1 should return 2 when given ([1,2,3], [1,3])', () => {
@@ -552,24 +552,24 @@ test('biggerTwo should return [6,7] when given ([6,7], [3,1])', () => {
   expect(array1.biggerTwo([6,7], [3,1])).toEqual([6,7]);
 });
 
-test('makeMiddle should return [2,3] when given [4]', () => {
-  expect(array1.makeMiddle([4])).toEqual([2,3]);
+test('makeMiddle should return [2,3] when given [1,2,3,4]', () => {
+  expect(array1.makeMiddle([1,2,3,4])).toEqual([2,3]);
 });
 
-test('makeMiddle should return [2,3] when given [4,9]', () => {
-  expect(array1.makeMiddle([4,9])).toEqual([2,3]);
+test('makeMiddle should return [2,3] when given [7,1,2,3,4,9]', () => {
+  expect(array1.makeMiddle([7,1,2,3,4,9])).toEqual([2,3]);
 });
 
-test('makeMiddle should return [1,2] when given []', () => {
-  expect(array1.makeMiddle([])).toEqual([1,2]);
+test('makeMiddle should return [1,2] when given [1,2]', () => {
+  expect(array1.makeMiddle([1,2])).toEqual([1,2]);
 });
 
-test('makeMiddle should return [2,4] when given [7]', () => {
-  expect(array1.makeMiddle([7])).toEqual([2,4]);
+test('makeMiddle should return [2,4] when given [5,2,4,7]', () => {
+  expect(array1.makeMiddle([5,2,4,7])).toEqual([2,4]);
 });
 
-test('makeMiddle should return [4,3] when given [9,1]', () => {
-  expect(array1.makeMiddle([9,1])).toEqual([4,3]);
+test('makeMiddle should return [4,3] when given [9,0,4,3,9,1]', () => {
+  expect(array1.makeMiddle([9,0,4,3,9,1])).toEqual([4,3]);
 });
 
 test('plusTwo should return [1,2,3,4] when given ([1,2], [3,4])', () => {
@@ -584,24 +584,24 @@ test('plusTwo should return [9,2,3,4] when given ([9,2], [3,4])', () => {
   expect(array1.plusTwo([9,2], [3,4])).toEqual([9,2,3,4]);
 });
 
-test('swapEnds should return [4,2,3,1] when given [4,2,3,1]', () => {
-  expect(array1.swapEnds([4,2,3,1])).toEqual([4,2,3,1]);
+test('swapEnds should return [4,2,3,1] when given [1,2,3,4]', () => {
+  expect(array1.swapEnds([1,2,3,4])).toEqual([4,2,3,1]);
 });
 
-test('swapEnds should return [3,2,1] when given [3,2,1]', () => {
-  expect(array1.swapEnds([3,2,1])).toEqual([3,2,1]);
+test('swapEnds should return [3,2,1] when given [1,2,3]', () => {
+  expect(array1.swapEnds([1,2,3])).toEqual([3,2,1]);
 });
 
-test('swapEnds should return [5,6,7,9,8] when given [5,6,7,9,8]', () => {
-  expect(array1.swapEnds([5,6,7,9,8])).toEqual([5,6,7,9,8]);
+test('swapEnds should return [5,6,7,9,8] when given [8,6,7,9,5]', () => {
+  expect(array1.swapEnds([8,6,7,9,5])).toEqual([5,6,7,9,8]);
 });
 
-test('swapEnds should return [9,1,4,1,5,3] when given [9,1,4,1,5,3]', () => {
-  expect(array1.swapEnds([9,1,4,1,5,3])).toEqual([9,1,4,1,5,3]);
+test('swapEnds should return [9,1,4,1,5,3] when given [3,1,4,1,5,9]', () => {
+  expect(array1.swapEnds([3,1,4,1,5,9])).toEqual([9,1,4,1,5,3]);
 });
 
-test('swapEnds should return [2,1] when given [2,1]', () => {
-  expect(array1.swapEnds([2,1])).toEqual([2,1]);
+test('swapEnds should return [2,1] when given [1,2]', () => {
+  expect(array1.swapEnds([1,2])).toEqual([2,1]);
 });
 
 test('swapEnds should return [1] when given [1]', () => {
